@@ -1,0 +1,6 @@
+module Pods_PandaParkiOS {
+  umbrella header "Pods-PandaParkiOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

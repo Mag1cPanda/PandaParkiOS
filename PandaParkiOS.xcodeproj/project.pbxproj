@@ -8,27 +8,407 @@
 
 /* Begin PBXBuildFile section */
 		0949B41625ABE6E900444DF2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B41525ABE6E900444DF2 /* AppDelegate.m */; };
-		0949B41925ABE6E900444DF2 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B41825ABE6E900444DF2 /* SceneDelegate.m */; };
-		0949B41C25ABE6E900444DF2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B41B25ABE6E900444DF2 /* ViewController.m */; };
-		0949B41F25ABE6E900444DF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0949B41D25ABE6E900444DF2 /* Main.storyboard */; };
 		0949B42125ABE6EA00444DF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0949B42025ABE6EA00444DF2 /* Assets.xcassets */; };
 		0949B42425ABE6EA00444DF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0949B42225ABE6EA00444DF2 /* LaunchScreen.storyboard */; };
 		0949B42725ABE6EA00444DF2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B42625ABE6EA00444DF2 /* main.m */; };
+		0949B49025AC016E00444DF2 /* QDHookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B46025AC016E00444DF2 /* QDHookViewController.m */; };
+		0949B49125AC016E00444DF2 /* NSObject+QDSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B46125AC016E00444DF2 /* NSObject+QDSafe.m */; };
+		0949B49225AC016E00444DF2 /* Aspects.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B46725AC016E00444DF2 /* Aspects.m */; };
+		0949B49325AC016E00444DF2 /* NSObject+QMUIHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B46825AC016E00444DF2 /* NSObject+QMUIHook.m */; };
+		0949B49425AC016E00444DF2 /* QMUIConfigurationTemplateDark.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B46C25AC016E00444DF2 /* QMUIConfigurationTemplateDark.m */; };
+		0949B49525AC016E00444DF2 /* QDThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B46E25AC016E00444DF2 /* QDThemeManager.m */; };
+		0949B49625AC016E00444DF2 /* QMUIConfigurationTemplatePinkRose.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B46F25AC016E00444DF2 /* QMUIConfigurationTemplatePinkRose.m */; };
+		0949B49725AC016E00444DF2 /* QMUIConfigurationTemplateGrass.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B47125AC016E00444DF2 /* QMUIConfigurationTemplateGrass.m */; };
+		0949B49825AC016E00444DF2 /* QMUIConfigurationTemplateGrapefruit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B47425AC016E00444DF2 /* QMUIConfigurationTemplateGrapefruit.m */; };
+		0949B49925AC016E00444DF2 /* QMUIConfigurationTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B47725AC016E00444DF2 /* QMUIConfigurationTemplate.m */; };
+		0949B49A25AC016E00444DF2 /* QDUIHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B47B25AC016E00444DF2 /* QDUIHelper.m */; };
+		0949B49B25AC016E00444DF2 /* UIImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B47C25AC016E00444DF2 /* UIImageEffects.m */; };
+		0949B49C25AC016E00444DF2 /* QDCommonUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B47D25AC016E00444DF2 /* QDCommonUI.m */; };
+		0949B49D25AC016E00444DF2 /* QDCommonGroupListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B48025AC016E00444DF2 /* QDCommonGroupListViewController.m */; };
+		0949B49E25AC016E00444DF2 /* QDCommonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B48325AC016E00444DF2 /* QDCommonViewController.m */; };
+		0949B49F25AC016E00444DF2 /* QDCommonGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B48625AC016E00444DF2 /* QDCommonGridViewController.m */; };
+		0949B4A025AC016E00444DF2 /* QDStyleSelectableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B48725AC016E00444DF2 /* QDStyleSelectableTableViewController.m */; };
+		0949B4A225AC016E00444DF2 /* QDCommonListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B48A25AC016E00444DF2 /* QDCommonListViewController.m */; };
+		0949B4A425AC016E00444DF2 /* QDCommonTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B48E25AC016E00444DF2 /* QDCommonTableViewController.m */; };
+		0949B58625AC043800444DF2 /* QMUIInteractiveDebugger.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B4BC25AC043700444DF2 /* QMUIInteractiveDebugger.m */; };
+		0949B58725AC043800444DF2 /* QMUIInteractiveDebugPanelItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B4BE25AC043700444DF2 /* QMUIInteractiveDebugPanelItem.m */; };
+		0949B58825AC043800444DF2 /* QMUIInteractiveDebugPanelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B4C025AC043700444DF2 /* QMUIInteractiveDebugPanelViewController.m */; };
+		0949B58925AC043800444DF2 /* UINavigationItem+QMUIBottomAccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B4C525AC043700444DF2 /* UINavigationItem+QMUIBottomAccessoryView.m */; };
+		0949B58A25AC043800444DF2 /* QDNavigationBarSmoothEffectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B4C625AC043700444DF2 /* QDNavigationBarSmoothEffectViewController.m */; };
+		0949B58B25AC043800444DF2 /* QDNavigationBottomAccessoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B4C725AC043700444DF2 /* QDNavigationBottomAccessoryViewController.m */; };
+		0949B58C25AC043800444DF2 /* QDActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B4C925AC043700444DF2 /* QDActivityIndicator.m */; };
+		0949B58D25AC043800444DF2 /* QDRippleAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B4CA25AC043700444DF2 /* QDRippleAnimationViewController.m */; };
+		0949B58E25AC043800444DF2 /* QDAllAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B4CB25AC043700444DF2 /* QDAllAnimationViewController.m */; };
+		0949B58F25AC043800444DF2 /* QDCAShapeLoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B4CC25AC043700444DF2 /* QDCAShapeLoadingViewController.m */; };
+		0949B59025AC043800444DF2 /* QDReplicatorLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B4D225AC043700444DF2 /* QDReplicatorLayerViewController.m */; };
+		0949B59125AC043800444DF2 /* QDInteractiveDebugViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B4D325AC043700444DF2 /* QDInteractiveDebugViewController.m */; };
+		0949B59225AC043800444DF2 /* QDAllSystemFontsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B4D425AC043700444DF2 /* QDAllSystemFontsViewController.m */; };
+		0949B59325AC043800444DF2 /* QDLabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B4D625AC043700444DF2 /* QDLabViewController.m */; };
+		0949B59425AC043800444DF2 /* QDFontPointSizeAndLineHeightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B4D925AC043700444DF2 /* QDFontPointSizeAndLineHeightViewController.m */; };
+		0949B59525AC043800444DF2 /* UINavigationBar+QMUISmoothEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B4DD25AC043700444DF2 /* UINavigationBar+QMUISmoothEffect.m */; };
+		0949B59625AC043800444DF2 /* QDPopupContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B4E025AC043700444DF2 /* QDPopupContainerViewController.m */; };
+		0949B59725AC043800444DF2 /* QDEmptyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B4E325AC043700444DF2 /* QDEmptyViewController.m */; };
+		0949B59825AC043800444DF2 /* QDThemeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B4E425AC043700444DF2 /* QDThemeViewController.m */; };
+		0949B59925AC043800444DF2 /* QDEmotionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B4E525AC043700444DF2 /* QDEmotionsViewController.m */; };
+		0949B59A25AC043800444DF2 /* QDMultipleDelegatesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B4EA25AC043700444DF2 /* QDMultipleDelegatesViewController.m */; };
+		0949B59B25AC043800444DF2 /* QDMultipleImagePickerPreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B4EB25AC043700444DF2 /* QDMultipleImagePickerPreviewViewController.m */; };
+		0949B59C25AC043800444DF2 /* QDCollectionViewDemoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B4ED25AC043700444DF2 /* QDCollectionViewDemoCell.m */; };
+		0949B59D25AC043800444DF2 /* QDToastListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B4EE25AC043700444DF2 /* QDToastListViewController.m */; };
+		0949B59E25AC043800444DF2 /* QDFloatLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B4EF25AC043700444DF2 /* QDFloatLayoutViewController.m */; };
+		0949B59F25AC043800444DF2 /* QDMoreOperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B4F125AC043700444DF2 /* QDMoreOperationViewController.m */; };
+		0949B5A025AC043800444DF2 /* QDCellHeightKeyCacheViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B4F325AC043700444DF2 /* QDCellHeightKeyCacheViewController.m */; };
+		0949B5A125AC043800444DF2 /* QDKeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B4F625AC043700444DF2 /* QDKeyboardViewController.m */; };
+		0949B5A225AC043800444DF2 /* QDImagePickerExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B4F725AC043700444DF2 /* QDImagePickerExampleViewController.m */; };
+		0949B5A325AC043800444DF2 /* QDGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B4F825AC043700444DF2 /* QDGridViewController.m */; };
+		0949B5A425AC043800444DF2 /* QDDialogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B4F925AC043700444DF2 /* QDDialogViewController.m */; };
+		0949B5A525AC043800444DF2 /* QDSingleImagePickerPreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B4FD25AC043700444DF2 /* QDSingleImagePickerPreviewViewController.m */; };
+		0949B5A625AC043800444DF2 /* QDSaveImageToSpecifiedAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B50125AC043700444DF2 /* QDSaveImageToSpecifiedAlbumViewController.m */; };
+		0949B5A725AC043800444DF2 /* QDAssetsManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B50325AC043700444DF2 /* QDAssetsManagerViewController.m */; };
+		0949B5A825AC043800444DF2 /* QDCustomToastAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B50525AC043700444DF2 /* QDCustomToastAnimator.m */; };
+		0949B5A925AC043800444DF2 /* QDNavigationBarScrollingAnimatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B50825AC043700444DF2 /* QDNavigationBarScrollingAnimatorViewController.m */; };
+		0949B5AA25AC043800444DF2 /* QDImagePreviewViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B50925AC043700444DF2 /* QDImagePreviewViewController1.m */; };
+		0949B5AB25AC043800444DF2 /* QDCustomToastContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B50A25AC043700444DF2 /* QDCustomToastContentView.m */; };
+		0949B5AC25AC043800444DF2 /* QDPieProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B50C25AC043700444DF2 /* QDPieProgressViewController.m */; };
+		0949B5AD25AC043800444DF2 /* QDMarqueeLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B50F25AC043700444DF2 /* QDMarqueeLabelViewController.m */; };
+		0949B5AE25AC043800444DF2 /* QDCollectionStackDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B51025AC043700444DF2 /* QDCollectionStackDemoViewController.m */; };
+		0949B5AF25AC043800444DF2 /* QDThemeExampleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B51225AC043700444DF2 /* QDThemeExampleView.m */; };
+		0949B5B025AC043800444DF2 /* QDSaveVideoToSpecifiedAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B51625AC043700444DF2 /* QDSaveVideoToSpecifiedAlbumViewController.m */; };
+		0949B5B125AC043800444DF2 /* QDImagePreviewViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B51825AC043700444DF2 /* QDImagePreviewViewController2.m */; };
+		0949B5B225AC043800444DF2 /* QDNavigationTitleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B51925AC043700444DF2 /* QDNavigationTitleViewController.m */; };
+		0949B5B325AC043800444DF2 /* QDComponentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B51D25AC043700444DF2 /* QDComponentsViewController.m */; };
+		0949B5B425AC043800444DF2 /* QDCollectionDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B51F25AC043700444DF2 /* QDCollectionDemoViewController.m */; };
+		0949B5B525AC043800444DF2 /* QDModalPresentationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B52125AC043700444DF2 /* QDModalPresentationViewController.m */; };
+		0949B5B625AC043800444DF2 /* QDStaticTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B52325AC043700444DF2 /* QDStaticTableViewController.m */; };
+		0949B5B725AC043800444DF2 /* QDCellHeightCacheViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B52525AC043700444DF2 /* QDCellHeightCacheViewController.m */; };
+		0949B5B825AC043800444DF2 /* QDDynamicHeightTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B52625AC043700444DF2 /* QDDynamicHeightTableViewCell.m */; };
+		0949B5B925AC043800444DF2 /* QDBadgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B52925AC043700444DF2 /* QDBadgeViewController.m */; };
+		0949B5BA25AC043800444DF2 /* QDNavigationBarScrollingSnapAnimatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B52A25AC043700444DF2 /* QDNavigationBarScrollingSnapAnimatorViewController.m */; };
+		0949B5BB25AC043800444DF2 /* QDConsoleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B52B25AC043700444DF2 /* QDConsoleViewController.m */; };
+		0949B5BC25AC043800444DF2 /* QDCellSizeKeyCacheViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B52C25AC043700444DF2 /* QDCellSizeKeyCacheViewController.m */; };
+		0949B5BD25AC043800444DF2 /* QDImageViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B52F25AC043700444DF2 /* QDImageViewViewController.m */; };
+		0949B5BE25AC043800444DF2 /* QDInsetGroupedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B53125AC043700444DF2 /* QDInsetGroupedTableViewController.m */; };
+		0949B5BF25AC043800444DF2 /* QDTableViewCellAccessoryTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B53225AC043700444DF2 /* QDTableViewCellAccessoryTypeViewController.m */; };
+		0949B5C025AC043800444DF2 /* QDColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B53325AC043700444DF2 /* QDColorViewController.m */; };
+		0949B5C125AC043800444DF2 /* QDTabBarItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B53525AC043700444DF2 /* QDTabBarItemViewController.m */; };
+		0949B5C225AC043800444DF2 /* QDGhostButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B53825AC043700444DF2 /* QDGhostButtonViewController.m */; };
+		0949B5C325AC043800444DF2 /* QDSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B53925AC043700444DF2 /* QDSearchViewController.m */; };
+		0949B5C425AC043800444DF2 /* QDNavigationListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B53A25AC043700444DF2 /* QDNavigationListViewController.m */; };
+		0949B5C525AC043800444DF2 /* QDUIViewBorderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B53B25AC043700444DF2 /* QDUIViewBorderViewController.m */; };
+		0949B5C625AC043800444DF2 /* QDLinkButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B53C25AC043700444DF2 /* QDLinkButtonViewController.m */; };
+		0949B5C725AC043800444DF2 /* QDLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B53D25AC043700444DF2 /* QDLabelViewController.m */; };
+		0949B5C825AC043800444DF2 /* QDTableViewHeaderFooterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B53F25AC043700444DF2 /* QDTableViewHeaderFooterViewController.m */; };
+		0949B5C925AC043800444DF2 /* QDButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B54125AC043700444DF2 /* QDButtonViewController.m */; };
+		0949B5CA25AC043800444DF2 /* QDTableViewCellInsetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B54325AC043700444DF2 /* QDTableViewCellInsetsViewController.m */; };
+		0949B5CB25AC043800444DF2 /* QDObjectMethodsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B54425AC043700444DF2 /* QDObjectMethodsListViewController.m */; };
+		0949B5CC25AC043800444DF2 /* QDFillButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B54625AC043700444DF2 /* QDFillButtonViewController.m */; };
+		0949B5CD25AC043800444DF2 /* QDImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B54825AC043700444DF2 /* QDImageViewController.m */; };
+		0949B5CE25AC043800444DF2 /* QDChangeNavBarStyleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B54A25AC043700444DF2 /* QDChangeNavBarStyleViewController.m */; };
+		0949B5CF25AC043800444DF2 /* QDSliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B54E25AC043700444DF2 /* QDSliderViewController.m */; };
+		0949B5D025AC043800444DF2 /* QDNormalButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B55125AC043700444DF2 /* QDNormalButtonViewController.m */; };
+		0949B5D125AC043800444DF2 /* QDAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B55225AC043700444DF2 /* QDAlertController.m */; };
+		0949B5D225AC043800444DF2 /* QDObjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B55325AC043700444DF2 /* QDObjectViewController.m */; };
+		0949B5D325AC043800444DF2 /* QDNavigationTransitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B55725AC043700444DF2 /* QDNavigationTransitionViewController.m */; };
+		0949B5D425AC043800444DF2 /* QDTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B55C25AC043800444DF2 /* QDTextViewController.m */; };
+		0949B5D525AC043800444DF2 /* QDOrientationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B55D25AC043800444DF2 /* QDOrientationViewController.m */; };
+		0949B5D625AC043800444DF2 /* QDUIViewLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B55E25AC043800444DF2 /* QDUIViewLayoutViewController.m */; };
+		0949B5D725AC043800444DF2 /* QDControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B56425AC043800444DF2 /* QDControlViewController.m */; };
+		0949B5D825AC043800444DF2 /* QDNavigationBarMaxYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B56625AC043800444DF2 /* QDNavigationBarMaxYViewController.m */; };
+		0949B5D925AC043800444DF2 /* QDUIViewDebugViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B56825AC043800444DF2 /* QDUIViewDebugViewController.m */; };
+		0949B5DA25AC043800444DF2 /* QDFontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B56B25AC043800444DF2 /* QDFontViewController.m */; };
+		0949B5DB25AC043800444DF2 /* QDFoldCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B56C25AC043800444DF2 /* QDFoldCollectionViewLayout.m */; };
+		0949B5DC25AC043800444DF2 /* QDCAAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B56E25AC043800444DF2 /* QDCAAnimationViewController.m */; };
+		0949B5DD25AC043800444DF2 /* QDNavigationButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B57025AC043800444DF2 /* QDNavigationButtonViewController.m */; };
+		0949B5DE25AC043800444DF2 /* QDInterceptBackButtonEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B57125AC043800444DF2 /* QDInterceptBackButtonEventViewController.m */; };
+		0949B5DF25AC043800444DF2 /* QDTextFieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B57525AC043800444DF2 /* QDTextFieldViewController.m */; };
+		0949B5E025AC043800444DF2 /* QDSearchBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B57725AC043800444DF2 /* QDSearchBarViewController.m */; };
+		0949B5E125AC043800444DF2 /* QDTableViewCellSeparatorInsetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B57825AC043800444DF2 /* QDTableViewCellSeparatorInsetsViewController.m */; };
+		0949B5E225AC043800444DF2 /* QDButtonEdgeInsetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B57925AC043800444DF2 /* QDButtonEdgeInsetsViewController.m */; };
+		0949B5E325AC043800444DF2 /* QDUIKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B57C25AC043800444DF2 /* QDUIKitViewController.m */; };
+		0949B5E425AC043800444DF2 /* QDLargeTitlesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B57E25AC043800444DF2 /* QDLargeTitlesViewController.m */; };
+		0949B5E525AC043800444DF2 /* QDToolBarButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B58025AC043800444DF2 /* QDToolBarButtonViewController.m */; };
+		0949B5E625AC043800444DF2 /* QDAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B58225AC043800444DF2 /* QDAboutViewController.m */; };
+		0949B5E725AC043800444DF2 /* QDAAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B58425AC043800444DF2 /* QDAAViewController.m */; };
+		0949B5FC25AC33C400444DF2 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B5FB25AC33C400444DF2 /* HomeViewController.m */; };
+		0949B60125AC33D100444DF2 /* DynamicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B60025AC33D100444DF2 /* DynamicViewController.m */; };
+		0949B60925AC33EF00444DF2 /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B60825AC33EF00444DF2 /* ChatViewController.m */; };
+		0949B60D25AC33F600444DF2 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B60C25AC33F600444DF2 /* MineViewController.m */; };
+		0949B61225AC36CB00444DF2 /* MatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B61125AC36CB00444DF2 /* MatchViewController.m */; };
+		096BD65125ADBF5F00E0DEE7 /* WODE.json in Resources */ = {isa = PBXBuildFile; fileRef = 096BD64C25ADBF5F00E0DEE7 /* WODE.json */; };
+		096BD65225ADBF5F00E0DEE7 /* QUANZI.json in Resources */ = {isa = PBXBuildFile; fileRef = 096BD64D25ADBF5F00E0DEE7 /* QUANZI.json */; };
+		096BD65325ADBF5F00E0DEE7 /* TIKU.json in Resources */ = {isa = PBXBuildFile; fileRef = 096BD64E25ADBF5F00E0DEE7 /* TIKU.json */; };
+		096BD65425ADBF5F00E0DEE7 /* SHOUYE.json in Resources */ = {isa = PBXBuildFile; fileRef = 096BD64F25ADBF5F00E0DEE7 /* SHOUYE.json */; };
+		096BD65525ADBF5F00E0DEE7 /* XUEXI.json in Resources */ = {isa = PBXBuildFile; fileRef = 096BD65025ADBF5F00E0DEE7 /* XUEXI.json */; };
+		096BD65A25ADC03300E0DEE7 /* SRNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 096BD65925ADC03300E0DEE7 /* SRNavigationController.m */; };
+		096BD65F25ADC05400E0DEE7 /* SRTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 096BD65E25ADC05400E0DEE7 /* SRTabBarViewController.m */; };
+		3EA0F7FE451F03708F7877DA /* libPods-PandaParkiOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 489C30039CE50327E4ECA591 /* libPods-PandaParkiOS.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0949B41125ABE6E900444DF2 /* PandaParkiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PandaParkiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0949B41425ABE6E900444DF2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0949B41525ABE6E900444DF2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0949B41725ABE6E900444DF2 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		0949B41825ABE6E900444DF2 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		0949B41A25ABE6E900444DF2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0949B41B25ABE6E900444DF2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		0949B41E25ABE6E900444DF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0949B42025ABE6EA00444DF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0949B42325ABE6EA00444DF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0949B42525ABE6EA00444DF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0949B42625ABE6EA00444DF2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0949B45C25AC00EE00444DF2 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		0949B46025AC016E00444DF2 /* QDHookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDHookViewController.m; sourceTree = "<group>"; };
+		0949B46125AC016E00444DF2 /* NSObject+QDSafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+QDSafe.m"; sourceTree = "<group>"; };
+		0949B46225AC016E00444DF2 /* NSObject+QMUIHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+QMUIHook.h"; sourceTree = "<group>"; };
+		0949B46325AC016E00444DF2 /* NSObject+QDSafe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+QDSafe.h"; sourceTree = "<group>"; };
+		0949B46425AC016E00444DF2 /* QDHookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDHookViewController.h; sourceTree = "<group>"; };
+		0949B46625AC016E00444DF2 /* Aspects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Aspects.h; sourceTree = "<group>"; };
+		0949B46725AC016E00444DF2 /* Aspects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Aspects.m; sourceTree = "<group>"; };
+		0949B46825AC016E00444DF2 /* NSObject+QMUIHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+QMUIHook.m"; sourceTree = "<group>"; };
+		0949B46B25AC016E00444DF2 /* QMUIConfigurationTemplateGrass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMUIConfigurationTemplateGrass.h; sourceTree = "<group>"; };
+		0949B46C25AC016E00444DF2 /* QMUIConfigurationTemplateDark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMUIConfigurationTemplateDark.m; sourceTree = "<group>"; };
+		0949B46D25AC016E00444DF2 /* QMUIConfigurationTemplateGrapefruit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMUIConfigurationTemplateGrapefruit.h; sourceTree = "<group>"; };
+		0949B46E25AC016E00444DF2 /* QDThemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDThemeManager.m; sourceTree = "<group>"; };
+		0949B46F25AC016E00444DF2 /* QMUIConfigurationTemplatePinkRose.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMUIConfigurationTemplatePinkRose.m; sourceTree = "<group>"; };
+		0949B47025AC016E00444DF2 /* QMUIConfigurationTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMUIConfigurationTemplate.h; sourceTree = "<group>"; };
+		0949B47125AC016E00444DF2 /* QMUIConfigurationTemplateGrass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMUIConfigurationTemplateGrass.m; sourceTree = "<group>"; };
+		0949B47225AC016E00444DF2 /* QMUIConfigurationTemplateDark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMUIConfigurationTemplateDark.h; sourceTree = "<group>"; };
+		0949B47325AC016E00444DF2 /* QDThemeProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDThemeProtocol.h; sourceTree = "<group>"; };
+		0949B47425AC016E00444DF2 /* QMUIConfigurationTemplateGrapefruit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMUIConfigurationTemplateGrapefruit.m; sourceTree = "<group>"; };
+		0949B47525AC016E00444DF2 /* QDThemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDThemeManager.h; sourceTree = "<group>"; };
+		0949B47625AC016E00444DF2 /* QMUIConfigurationTemplatePinkRose.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMUIConfigurationTemplatePinkRose.h; sourceTree = "<group>"; };
+		0949B47725AC016E00444DF2 /* QMUIConfigurationTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMUIConfigurationTemplate.m; sourceTree = "<group>"; };
+		0949B47925AC016E00444DF2 /* UIImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageEffects.h; sourceTree = "<group>"; };
+		0949B47A25AC016E00444DF2 /* QDCommonUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDCommonUI.h; sourceTree = "<group>"; };
+		0949B47B25AC016E00444DF2 /* QDUIHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDUIHelper.m; sourceTree = "<group>"; };
+		0949B47C25AC016E00444DF2 /* UIImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageEffects.m; sourceTree = "<group>"; };
+		0949B47D25AC016E00444DF2 /* QDCommonUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDCommonUI.m; sourceTree = "<group>"; };
+		0949B47E25AC016E00444DF2 /* QDUIHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDUIHelper.h; sourceTree = "<group>"; };
+		0949B48025AC016E00444DF2 /* QDCommonGroupListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDCommonGroupListViewController.m; sourceTree = "<group>"; };
+		0949B48225AC016E00444DF2 /* QDCommonListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDCommonListViewController.h; sourceTree = "<group>"; };
+		0949B48325AC016E00444DF2 /* QDCommonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDCommonViewController.m; sourceTree = "<group>"; };
+		0949B48525AC016E00444DF2 /* QDCommonTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDCommonTableViewController.h; sourceTree = "<group>"; };
+		0949B48625AC016E00444DF2 /* QDCommonGridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDCommonGridViewController.m; sourceTree = "<group>"; };
+		0949B48725AC016E00444DF2 /* QDStyleSelectableTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDStyleSelectableTableViewController.m; sourceTree = "<group>"; };
+		0949B48925AC016E00444DF2 /* QDCommonGroupListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDCommonGroupListViewController.h; sourceTree = "<group>"; };
+		0949B48A25AC016E00444DF2 /* QDCommonListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDCommonListViewController.m; sourceTree = "<group>"; };
+		0949B48B25AC016E00444DF2 /* QDCommonGridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDCommonGridViewController.h; sourceTree = "<group>"; };
+		0949B48C25AC016E00444DF2 /* QDCommonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDCommonViewController.h; sourceTree = "<group>"; };
+		0949B48E25AC016E00444DF2 /* QDCommonTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDCommonTableViewController.m; sourceTree = "<group>"; };
+		0949B48F25AC016E00444DF2 /* QDStyleSelectableTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDStyleSelectableTableViewController.h; sourceTree = "<group>"; };
+		0949B4BC25AC043700444DF2 /* QMUIInteractiveDebugger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMUIInteractiveDebugger.m; sourceTree = "<group>"; };
+		0949B4BD25AC043700444DF2 /* QMUIInteractiveDebugPanelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMUIInteractiveDebugPanelViewController.h; sourceTree = "<group>"; };
+		0949B4BE25AC043700444DF2 /* QMUIInteractiveDebugPanelItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMUIInteractiveDebugPanelItem.m; sourceTree = "<group>"; };
+		0949B4BF25AC043700444DF2 /* QMUIInteractiveDebugger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMUIInteractiveDebugger.h; sourceTree = "<group>"; };
+		0949B4C025AC043700444DF2 /* QMUIInteractiveDebugPanelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMUIInteractiveDebugPanelViewController.m; sourceTree = "<group>"; };
+		0949B4C125AC043700444DF2 /* QMUIInteractiveDebugPanelItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMUIInteractiveDebugPanelItem.h; sourceTree = "<group>"; };
+		0949B4C225AC043700444DF2 /* QDLabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDLabViewController.h; sourceTree = "<group>"; };
+		0949B4C425AC043700444DF2 /* UINavigationItem+QMUIBottomAccessoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+QMUIBottomAccessoryView.h"; sourceTree = "<group>"; };
+		0949B4C525AC043700444DF2 /* UINavigationItem+QMUIBottomAccessoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationItem+QMUIBottomAccessoryView.m"; sourceTree = "<group>"; };
+		0949B4C625AC043700444DF2 /* QDNavigationBarSmoothEffectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDNavigationBarSmoothEffectViewController.m; sourceTree = "<group>"; };
+		0949B4C725AC043700444DF2 /* QDNavigationBottomAccessoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDNavigationBottomAccessoryViewController.m; sourceTree = "<group>"; };
+		0949B4C925AC043700444DF2 /* QDActivityIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDActivityIndicator.m; sourceTree = "<group>"; };
+		0949B4CA25AC043700444DF2 /* QDRippleAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDRippleAnimationViewController.m; sourceTree = "<group>"; };
+		0949B4CB25AC043700444DF2 /* QDAllAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDAllAnimationViewController.m; sourceTree = "<group>"; };
+		0949B4CC25AC043700444DF2 /* QDCAShapeLoadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDCAShapeLoadingViewController.m; sourceTree = "<group>"; };
+		0949B4CD25AC043700444DF2 /* QDReplicatorLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDReplicatorLayerViewController.h; sourceTree = "<group>"; };
+		0949B4CE25AC043700444DF2 /* QDActivityIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDActivityIndicator.h; sourceTree = "<group>"; };
+		0949B4CF25AC043700444DF2 /* QDCAShapeLoadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDCAShapeLoadingViewController.h; sourceTree = "<group>"; };
+		0949B4D025AC043700444DF2 /* QDAllAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDAllAnimationViewController.h; sourceTree = "<group>"; };
+		0949B4D125AC043700444DF2 /* QDRippleAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDRippleAnimationViewController.h; sourceTree = "<group>"; };
+		0949B4D225AC043700444DF2 /* QDReplicatorLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDReplicatorLayerViewController.m; sourceTree = "<group>"; };
+		0949B4D325AC043700444DF2 /* QDInteractiveDebugViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDInteractiveDebugViewController.m; sourceTree = "<group>"; };
+		0949B4D425AC043700444DF2 /* QDAllSystemFontsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDAllSystemFontsViewController.m; sourceTree = "<group>"; };
+		0949B4D525AC043700444DF2 /* QDFontPointSizeAndLineHeightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDFontPointSizeAndLineHeightViewController.h; sourceTree = "<group>"; };
+		0949B4D625AC043700444DF2 /* QDLabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDLabViewController.m; sourceTree = "<group>"; };
+		0949B4D725AC043700444DF2 /* QDNavigationBottomAccessoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDNavigationBottomAccessoryViewController.h; sourceTree = "<group>"; };
+		0949B4D825AC043700444DF2 /* QDNavigationBarSmoothEffectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDNavigationBarSmoothEffectViewController.h; sourceTree = "<group>"; };
+		0949B4D925AC043700444DF2 /* QDFontPointSizeAndLineHeightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDFontPointSizeAndLineHeightViewController.m; sourceTree = "<group>"; };
+		0949B4DA25AC043700444DF2 /* QDAllSystemFontsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDAllSystemFontsViewController.h; sourceTree = "<group>"; };
+		0949B4DB25AC043700444DF2 /* QDInteractiveDebugViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDInteractiveDebugViewController.h; sourceTree = "<group>"; };
+		0949B4DD25AC043700444DF2 /* UINavigationBar+QMUISmoothEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+QMUISmoothEffect.m"; sourceTree = "<group>"; };
+		0949B4DE25AC043700444DF2 /* UINavigationBar+QMUISmoothEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+QMUISmoothEffect.h"; sourceTree = "<group>"; };
+		0949B4E025AC043700444DF2 /* QDPopupContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDPopupContainerViewController.m; sourceTree = "<group>"; };
+		0949B4E125AC043700444DF2 /* QDCollectionStackDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDCollectionStackDemoViewController.h; sourceTree = "<group>"; };
+		0949B4E225AC043700444DF2 /* QDMarqueeLabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDMarqueeLabelViewController.h; sourceTree = "<group>"; };
+		0949B4E325AC043700444DF2 /* QDEmptyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDEmptyViewController.m; sourceTree = "<group>"; };
+		0949B4E425AC043700444DF2 /* QDThemeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDThemeViewController.m; sourceTree = "<group>"; };
+		0949B4E525AC043700444DF2 /* QDEmotionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDEmotionsViewController.m; sourceTree = "<group>"; };
+		0949B4E625AC043700444DF2 /* QDCustomToastContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDCustomToastContentView.h; sourceTree = "<group>"; };
+		0949B4E725AC043700444DF2 /* QDPieProgressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDPieProgressViewController.h; sourceTree = "<group>"; };
+		0949B4E825AC043700444DF2 /* QDImagePreviewViewController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDImagePreviewViewController1.h; sourceTree = "<group>"; };
+		0949B4E925AC043700444DF2 /* QDNavigationBarScrollingAnimatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDNavigationBarScrollingAnimatorViewController.h; sourceTree = "<group>"; };
+		0949B4EA25AC043700444DF2 /* QDMultipleDelegatesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDMultipleDelegatesViewController.m; sourceTree = "<group>"; };
+		0949B4EB25AC043700444DF2 /* QDMultipleImagePickerPreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDMultipleImagePickerPreviewViewController.m; sourceTree = "<group>"; };
+		0949B4EC25AC043700444DF2 /* QDSaveVideoToSpecifiedAlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDSaveVideoToSpecifiedAlbumViewController.h; sourceTree = "<group>"; };
+		0949B4ED25AC043700444DF2 /* QDCollectionViewDemoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDCollectionViewDemoCell.m; sourceTree = "<group>"; };
+		0949B4EE25AC043700444DF2 /* QDToastListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDToastListViewController.m; sourceTree = "<group>"; };
+		0949B4EF25AC043700444DF2 /* QDFloatLayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDFloatLayoutViewController.m; sourceTree = "<group>"; };
+		0949B4F025AC043700444DF2 /* QDThemeExampleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDThemeExampleView.h; sourceTree = "<group>"; };
+		0949B4F125AC043700444DF2 /* QDMoreOperationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDMoreOperationViewController.m; sourceTree = "<group>"; };
+		0949B4F225AC043700444DF2 /* QDModalPresentationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDModalPresentationViewController.h; sourceTree = "<group>"; };
+		0949B4F325AC043700444DF2 /* QDCellHeightKeyCacheViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDCellHeightKeyCacheViewController.m; sourceTree = "<group>"; };
+		0949B4F425AC043700444DF2 /* QDCollectionDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDCollectionDemoViewController.h; sourceTree = "<group>"; };
+		0949B4F525AC043700444DF2 /* QDComponentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDComponentsViewController.h; sourceTree = "<group>"; };
+		0949B4F625AC043700444DF2 /* QDKeyboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDKeyboardViewController.m; sourceTree = "<group>"; };
+		0949B4F725AC043700444DF2 /* QDImagePickerExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDImagePickerExampleViewController.m; sourceTree = "<group>"; };
+		0949B4F825AC043700444DF2 /* QDGridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDGridViewController.m; sourceTree = "<group>"; };
+		0949B4F925AC043700444DF2 /* QDDialogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDDialogViewController.m; sourceTree = "<group>"; };
+		0949B4FA25AC043700444DF2 /* QDNavigationTitleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDNavigationTitleViewController.h; sourceTree = "<group>"; };
+		0949B4FB25AC043700444DF2 /* QDImagePreviewViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDImagePreviewViewController2.h; sourceTree = "<group>"; };
+		0949B4FC25AC043700444DF2 /* QDCellSizeKeyCacheViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDCellSizeKeyCacheViewController.h; sourceTree = "<group>"; };
+		0949B4FD25AC043700444DF2 /* QDSingleImagePickerPreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDSingleImagePickerPreviewViewController.m; sourceTree = "<group>"; };
+		0949B4FE25AC043700444DF2 /* QDConsoleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDConsoleViewController.h; sourceTree = "<group>"; };
+		0949B4FF25AC043700444DF2 /* QDNavigationBarScrollingSnapAnimatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDNavigationBarScrollingSnapAnimatorViewController.h; sourceTree = "<group>"; };
+		0949B50025AC043700444DF2 /* QDBadgeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDBadgeViewController.h; sourceTree = "<group>"; };
+		0949B50125AC043700444DF2 /* QDSaveImageToSpecifiedAlbumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDSaveImageToSpecifiedAlbumViewController.m; sourceTree = "<group>"; };
+		0949B50225AC043700444DF2 /* QDDynamicHeightTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDDynamicHeightTableViewCell.h; sourceTree = "<group>"; };
+		0949B50325AC043700444DF2 /* QDAssetsManagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDAssetsManagerViewController.m; sourceTree = "<group>"; };
+		0949B50425AC043700444DF2 /* QDCellHeightCacheViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDCellHeightCacheViewController.h; sourceTree = "<group>"; };
+		0949B50525AC043700444DF2 /* QDCustomToastAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDCustomToastAnimator.m; sourceTree = "<group>"; };
+		0949B50625AC043700444DF2 /* QDStaticTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDStaticTableViewController.h; sourceTree = "<group>"; };
+		0949B50725AC043700444DF2 /* QDMultipleDelegatesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDMultipleDelegatesViewController.h; sourceTree = "<group>"; };
+		0949B50825AC043700444DF2 /* QDNavigationBarScrollingAnimatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDNavigationBarScrollingAnimatorViewController.m; sourceTree = "<group>"; };
+		0949B50925AC043700444DF2 /* QDImagePreviewViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDImagePreviewViewController1.m; sourceTree = "<group>"; };
+		0949B50A25AC043700444DF2 /* QDCustomToastContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDCustomToastContentView.m; sourceTree = "<group>"; };
+		0949B50B25AC043700444DF2 /* QDEmotionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDEmotionsViewController.h; sourceTree = "<group>"; };
+		0949B50C25AC043700444DF2 /* QDPieProgressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDPieProgressViewController.m; sourceTree = "<group>"; };
+		0949B50D25AC043700444DF2 /* QDThemeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDThemeViewController.h; sourceTree = "<group>"; };
+		0949B50E25AC043700444DF2 /* QDEmptyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDEmptyViewController.h; sourceTree = "<group>"; };
+		0949B50F25AC043700444DF2 /* QDMarqueeLabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDMarqueeLabelViewController.m; sourceTree = "<group>"; };
+		0949B51025AC043700444DF2 /* QDCollectionStackDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDCollectionStackDemoViewController.m; sourceTree = "<group>"; };
+		0949B51125AC043700444DF2 /* QDPopupContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDPopupContainerViewController.h; sourceTree = "<group>"; };
+		0949B51225AC043700444DF2 /* QDThemeExampleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDThemeExampleView.m; sourceTree = "<group>"; };
+		0949B51325AC043700444DF2 /* QDFloatLayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDFloatLayoutViewController.h; sourceTree = "<group>"; };
+		0949B51425AC043700444DF2 /* QDCollectionViewDemoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDCollectionViewDemoCell.h; sourceTree = "<group>"; };
+		0949B51525AC043700444DF2 /* QDToastListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDToastListViewController.h; sourceTree = "<group>"; };
+		0949B51625AC043700444DF2 /* QDSaveVideoToSpecifiedAlbumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDSaveVideoToSpecifiedAlbumViewController.m; sourceTree = "<group>"; };
+		0949B51725AC043700444DF2 /* QDMultipleImagePickerPreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDMultipleImagePickerPreviewViewController.h; sourceTree = "<group>"; };
+		0949B51825AC043700444DF2 /* QDImagePreviewViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDImagePreviewViewController2.m; sourceTree = "<group>"; };
+		0949B51925AC043700444DF2 /* QDNavigationTitleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDNavigationTitleViewController.m; sourceTree = "<group>"; };
+		0949B51A25AC043700444DF2 /* QDGridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDGridViewController.h; sourceTree = "<group>"; };
+		0949B51B25AC043700444DF2 /* QDDialogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDDialogViewController.h; sourceTree = "<group>"; };
+		0949B51C25AC043700444DF2 /* QDImagePickerExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDImagePickerExampleViewController.h; sourceTree = "<group>"; };
+		0949B51D25AC043700444DF2 /* QDComponentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDComponentsViewController.m; sourceTree = "<group>"; };
+		0949B51E25AC043700444DF2 /* QDKeyboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDKeyboardViewController.h; sourceTree = "<group>"; };
+		0949B51F25AC043700444DF2 /* QDCollectionDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDCollectionDemoViewController.m; sourceTree = "<group>"; };
+		0949B52025AC043700444DF2 /* QDCellHeightKeyCacheViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDCellHeightKeyCacheViewController.h; sourceTree = "<group>"; };
+		0949B52125AC043700444DF2 /* QDModalPresentationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDModalPresentationViewController.m; sourceTree = "<group>"; };
+		0949B52225AC043700444DF2 /* QDMoreOperationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDMoreOperationViewController.h; sourceTree = "<group>"; };
+		0949B52325AC043700444DF2 /* QDStaticTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDStaticTableViewController.m; sourceTree = "<group>"; };
+		0949B52425AC043700444DF2 /* QDCustomToastAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDCustomToastAnimator.h; sourceTree = "<group>"; };
+		0949B52525AC043700444DF2 /* QDCellHeightCacheViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDCellHeightCacheViewController.m; sourceTree = "<group>"; };
+		0949B52625AC043700444DF2 /* QDDynamicHeightTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDDynamicHeightTableViewCell.m; sourceTree = "<group>"; };
+		0949B52725AC043700444DF2 /* QDAssetsManagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDAssetsManagerViewController.h; sourceTree = "<group>"; };
+		0949B52825AC043700444DF2 /* QDSaveImageToSpecifiedAlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDSaveImageToSpecifiedAlbumViewController.h; sourceTree = "<group>"; };
+		0949B52925AC043700444DF2 /* QDBadgeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDBadgeViewController.m; sourceTree = "<group>"; };
+		0949B52A25AC043700444DF2 /* QDNavigationBarScrollingSnapAnimatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDNavigationBarScrollingSnapAnimatorViewController.m; sourceTree = "<group>"; };
+		0949B52B25AC043700444DF2 /* QDConsoleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDConsoleViewController.m; sourceTree = "<group>"; };
+		0949B52C25AC043700444DF2 /* QDCellSizeKeyCacheViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDCellSizeKeyCacheViewController.m; sourceTree = "<group>"; };
+		0949B52D25AC043700444DF2 /* QDSingleImagePickerPreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDSingleImagePickerPreviewViewController.h; sourceTree = "<group>"; };
+		0949B52F25AC043700444DF2 /* QDImageViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDImageViewViewController.m; sourceTree = "<group>"; };
+		0949B53025AC043700444DF2 /* QDControlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDControlViewController.h; sourceTree = "<group>"; };
+		0949B53125AC043700444DF2 /* QDInsetGroupedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDInsetGroupedTableViewController.m; sourceTree = "<group>"; };
+		0949B53225AC043700444DF2 /* QDTableViewCellAccessoryTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDTableViewCellAccessoryTypeViewController.m; sourceTree = "<group>"; };
+		0949B53325AC043700444DF2 /* QDColorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDColorViewController.m; sourceTree = "<group>"; };
+		0949B53425AC043700444DF2 /* QDUIViewLayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDUIViewLayoutViewController.h; sourceTree = "<group>"; };
+		0949B53525AC043700444DF2 /* QDTabBarItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDTabBarItemViewController.m; sourceTree = "<group>"; };
+		0949B53625AC043700444DF2 /* QDOrientationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDOrientationViewController.h; sourceTree = "<group>"; };
+		0949B53725AC043700444DF2 /* QDTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDTextViewController.h; sourceTree = "<group>"; };
+		0949B53825AC043700444DF2 /* QDGhostButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDGhostButtonViewController.m; sourceTree = "<group>"; };
+		0949B53925AC043700444DF2 /* QDSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDSearchViewController.m; sourceTree = "<group>"; };
+		0949B53A25AC043700444DF2 /* QDNavigationListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDNavigationListViewController.m; sourceTree = "<group>"; };
+		0949B53B25AC043700444DF2 /* QDUIViewBorderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDUIViewBorderViewController.m; sourceTree = "<group>"; };
+		0949B53C25AC043700444DF2 /* QDLinkButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDLinkButtonViewController.m; sourceTree = "<group>"; };
+		0949B53D25AC043700444DF2 /* QDLabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDLabelViewController.m; sourceTree = "<group>"; };
+		0949B53E25AC043700444DF2 /* QDUIViewDebugViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDUIViewDebugViewController.h; sourceTree = "<group>"; };
+		0949B53F25AC043700444DF2 /* QDTableViewHeaderFooterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDTableViewHeaderFooterViewController.m; sourceTree = "<group>"; };
+		0949B54025AC043700444DF2 /* QDNavigationBarMaxYViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDNavigationBarMaxYViewController.h; sourceTree = "<group>"; };
+		0949B54125AC043700444DF2 /* QDButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDButtonViewController.m; sourceTree = "<group>"; };
+		0949B54225AC043700444DF2 /* QDTextFieldViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDTextFieldViewController.h; sourceTree = "<group>"; };
+		0949B54325AC043700444DF2 /* QDTableViewCellInsetsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDTableViewCellInsetsViewController.m; sourceTree = "<group>"; };
+		0949B54425AC043700444DF2 /* QDObjectMethodsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDObjectMethodsListViewController.m; sourceTree = "<group>"; };
+		0949B54525AC043700444DF2 /* QDInterceptBackButtonEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDInterceptBackButtonEventViewController.h; sourceTree = "<group>"; };
+		0949B54625AC043700444DF2 /* QDFillButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDFillButtonViewController.m; sourceTree = "<group>"; };
+		0949B54725AC043700444DF2 /* QDNavigationButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDNavigationButtonViewController.h; sourceTree = "<group>"; };
+		0949B54825AC043700444DF2 /* QDImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDImageViewController.m; sourceTree = "<group>"; };
+		0949B54925AC043700444DF2 /* QDCAAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDCAAnimationViewController.h; sourceTree = "<group>"; };
+		0949B54A25AC043700444DF2 /* QDChangeNavBarStyleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDChangeNavBarStyleViewController.m; sourceTree = "<group>"; };
+		0949B54B25AC043700444DF2 /* QDFontViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDFontViewController.h; sourceTree = "<group>"; };
+		0949B54C25AC043700444DF2 /* QDFoldCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDFoldCollectionViewLayout.h; sourceTree = "<group>"; };
+		0949B54D25AC043700444DF2 /* QDToolBarButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDToolBarButtonViewController.h; sourceTree = "<group>"; };
+		0949B54E25AC043700444DF2 /* QDSliderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDSliderViewController.m; sourceTree = "<group>"; };
+		0949B54F25AC043700444DF2 /* QDLargeTitlesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDLargeTitlesViewController.h; sourceTree = "<group>"; };
+		0949B55025AC043700444DF2 /* QDUIKitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDUIKitViewController.h; sourceTree = "<group>"; };
+		0949B55125AC043700444DF2 /* QDNormalButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDNormalButtonViewController.m; sourceTree = "<group>"; };
+		0949B55225AC043700444DF2 /* QDAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDAlertController.m; sourceTree = "<group>"; };
+		0949B55325AC043700444DF2 /* QDObjectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDObjectViewController.m; sourceTree = "<group>"; };
+		0949B55425AC043700444DF2 /* QDButtonEdgeInsetsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDButtonEdgeInsetsViewController.h; sourceTree = "<group>"; };
+		0949B55525AC043700444DF2 /* QDTableViewCellSeparatorInsetsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDTableViewCellSeparatorInsetsViewController.h; sourceTree = "<group>"; };
+		0949B55625AC043700444DF2 /* QDSearchBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDSearchBarViewController.h; sourceTree = "<group>"; };
+		0949B55725AC043700444DF2 /* QDNavigationTransitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDNavigationTransitionViewController.m; sourceTree = "<group>"; };
+		0949B55825AC043700444DF2 /* QDSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDSearchViewController.h; sourceTree = "<group>"; };
+		0949B55925AC043700444DF2 /* QDUIViewBorderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDUIViewBorderViewController.h; sourceTree = "<group>"; };
+		0949B55A25AC043800444DF2 /* QDNavigationListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDNavigationListViewController.h; sourceTree = "<group>"; };
+		0949B55B25AC043800444DF2 /* QDGhostButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDGhostButtonViewController.h; sourceTree = "<group>"; };
+		0949B55C25AC043800444DF2 /* QDTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDTextViewController.m; sourceTree = "<group>"; };
+		0949B55D25AC043800444DF2 /* QDOrientationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDOrientationViewController.m; sourceTree = "<group>"; };
+		0949B55E25AC043800444DF2 /* QDUIViewLayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDUIViewLayoutViewController.m; sourceTree = "<group>"; };
+		0949B55F25AC043800444DF2 /* QDTabBarItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDTabBarItemViewController.h; sourceTree = "<group>"; };
+		0949B56025AC043800444DF2 /* QDColorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDColorViewController.h; sourceTree = "<group>"; };
+		0949B56125AC043800444DF2 /* QDTableViewCellAccessoryTypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDTableViewCellAccessoryTypeViewController.h; sourceTree = "<group>"; };
+		0949B56225AC043800444DF2 /* QDInsetGroupedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDInsetGroupedTableViewController.h; sourceTree = "<group>"; };
+		0949B56325AC043800444DF2 /* QDImageViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDImageViewViewController.h; sourceTree = "<group>"; };
+		0949B56425AC043800444DF2 /* QDControlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDControlViewController.m; sourceTree = "<group>"; };
+		0949B56525AC043800444DF2 /* QDButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDButtonViewController.h; sourceTree = "<group>"; };
+		0949B56625AC043800444DF2 /* QDNavigationBarMaxYViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDNavigationBarMaxYViewController.m; sourceTree = "<group>"; };
+		0949B56725AC043800444DF2 /* QDTableViewHeaderFooterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDTableViewHeaderFooterViewController.h; sourceTree = "<group>"; };
+		0949B56825AC043800444DF2 /* QDUIViewDebugViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDUIViewDebugViewController.m; sourceTree = "<group>"; };
+		0949B56925AC043800444DF2 /* QDLabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDLabelViewController.h; sourceTree = "<group>"; };
+		0949B56A25AC043800444DF2 /* QDLinkButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDLinkButtonViewController.h; sourceTree = "<group>"; };
+		0949B56B25AC043800444DF2 /* QDFontViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDFontViewController.m; sourceTree = "<group>"; };
+		0949B56C25AC043800444DF2 /* QDFoldCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDFoldCollectionViewLayout.m; sourceTree = "<group>"; };
+		0949B56D25AC043800444DF2 /* QDChangeNavBarStyleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDChangeNavBarStyleViewController.h; sourceTree = "<group>"; };
+		0949B56E25AC043800444DF2 /* QDCAAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDCAAnimationViewController.m; sourceTree = "<group>"; };
+		0949B56F25AC043800444DF2 /* QDImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDImageViewController.h; sourceTree = "<group>"; };
+		0949B57025AC043800444DF2 /* QDNavigationButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDNavigationButtonViewController.m; sourceTree = "<group>"; };
+		0949B57125AC043800444DF2 /* QDInterceptBackButtonEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDInterceptBackButtonEventViewController.m; sourceTree = "<group>"; };
+		0949B57225AC043800444DF2 /* QDFillButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDFillButtonViewController.h; sourceTree = "<group>"; };
+		0949B57325AC043800444DF2 /* QDObjectMethodsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDObjectMethodsListViewController.h; sourceTree = "<group>"; };
+		0949B57425AC043800444DF2 /* QDTableViewCellInsetsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDTableViewCellInsetsViewController.h; sourceTree = "<group>"; };
+		0949B57525AC043800444DF2 /* QDTextFieldViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDTextFieldViewController.m; sourceTree = "<group>"; };
+		0949B57625AC043800444DF2 /* QDNavigationTransitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDNavigationTransitionViewController.h; sourceTree = "<group>"; };
+		0949B57725AC043800444DF2 /* QDSearchBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDSearchBarViewController.m; sourceTree = "<group>"; };
+		0949B57825AC043800444DF2 /* QDTableViewCellSeparatorInsetsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDTableViewCellSeparatorInsetsViewController.m; sourceTree = "<group>"; };
+		0949B57925AC043800444DF2 /* QDButtonEdgeInsetsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDButtonEdgeInsetsViewController.m; sourceTree = "<group>"; };
+		0949B57A25AC043800444DF2 /* QDObjectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDObjectViewController.h; sourceTree = "<group>"; };
+		0949B57B25AC043800444DF2 /* QDAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDAlertController.h; sourceTree = "<group>"; };
+		0949B57C25AC043800444DF2 /* QDUIKitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDUIKitViewController.m; sourceTree = "<group>"; };
+		0949B57D25AC043800444DF2 /* QDNormalButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDNormalButtonViewController.h; sourceTree = "<group>"; };
+		0949B57E25AC043800444DF2 /* QDLargeTitlesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDLargeTitlesViewController.m; sourceTree = "<group>"; };
+		0949B57F25AC043800444DF2 /* QDSliderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDSliderViewController.h; sourceTree = "<group>"; };
+		0949B58025AC043800444DF2 /* QDToolBarButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDToolBarButtonViewController.m; sourceTree = "<group>"; };
+		0949B58225AC043800444DF2 /* QDAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDAboutViewController.m; sourceTree = "<group>"; };
+		0949B58325AC043800444DF2 /* QDAAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDAAViewController.h; sourceTree = "<group>"; };
+		0949B58425AC043800444DF2 /* QDAAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDAAViewController.m; sourceTree = "<group>"; };
+		0949B58525AC043800444DF2 /* QDAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDAboutViewController.h; sourceTree = "<group>"; };
+		0949B5FA25AC33C400444DF2 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		0949B5FB25AC33C400444DF2 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		0949B5FF25AC33D100444DF2 /* DynamicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamicViewController.h; sourceTree = "<group>"; };
+		0949B60025AC33D100444DF2 /* DynamicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicViewController.m; sourceTree = "<group>"; };
+		0949B60725AC33EF00444DF2 /* ChatViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
+		0949B60825AC33EF00444DF2 /* ChatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
+		0949B60B25AC33F600444DF2 /* MineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
+		0949B60C25AC33F600444DF2 /* MineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
+		0949B61025AC36CB00444DF2 /* MatchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MatchViewController.h; sourceTree = "<group>"; };
+		0949B61125AC36CB00444DF2 /* MatchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MatchViewController.m; sourceTree = "<group>"; };
+		096BD64C25ADBF5F00E0DEE7 /* WODE.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = WODE.json; sourceTree = "<group>"; };
+		096BD64D25ADBF5F00E0DEE7 /* QUANZI.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = QUANZI.json; sourceTree = "<group>"; };
+		096BD64E25ADBF5F00E0DEE7 /* TIKU.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TIKU.json; sourceTree = "<group>"; };
+		096BD64F25ADBF5F00E0DEE7 /* SHOUYE.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SHOUYE.json; sourceTree = "<group>"; };
+		096BD65025ADBF5F00E0DEE7 /* XUEXI.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = XUEXI.json; sourceTree = "<group>"; };
+		096BD65825ADC03300E0DEE7 /* SRNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRNavigationController.h; sourceTree = "<group>"; };
+		096BD65925ADC03300E0DEE7 /* SRNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRNavigationController.m; sourceTree = "<group>"; };
+		096BD65D25ADC05400E0DEE7 /* SRTabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRTabBarViewController.h; sourceTree = "<group>"; };
+		096BD65E25ADC05400E0DEE7 /* SRTabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRTabBarViewController.m; sourceTree = "<group>"; };
+		489C30039CE50327E4ECA591 /* libPods-PandaParkiOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PandaParkiOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		638BDA9D111194F441A0498C /* Pods-PandaParkiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PandaParkiOS.debug.xcconfig"; path = "Target Support Files/Pods-PandaParkiOS/Pods-PandaParkiOS.debug.xcconfig"; sourceTree = "<group>"; };
+		7DEE0A7D0D2B4B5AABF3A206 /* Pods-PandaParkiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PandaParkiOS.release.xcconfig"; path = "Target Support Files/Pods-PandaParkiOS/Pods-PandaParkiOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +416,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EA0F7FE451F03708F7877DA /* libPods-PandaParkiOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +428,8 @@
 			children = (
 				0949B41325ABE6E900444DF2 /* PandaParkiOS */,
 				0949B41225ABE6E900444DF2 /* Products */,
+				5077CB1EAA9A6562C0C060A6 /* Pods */,
+				E5BB9BE87271DDBD7E9C6ACF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,19 +444,470 @@
 		0949B41325ABE6E900444DF2 /* PandaParkiOS */ = {
 			isa = PBXGroup;
 			children = (
+				096BD65725ADBFEC00E0DEE7 /* Base */,
+				096BD64A25ADBF3F00E0DEE7 /* Rescources */,
+				096BD5FF25ADA8C100E0DEE7 /* Third */,
+				0949B5F925AC339E00444DF2 /* Mine */,
+				0949B5F825AC339600444DF2 /* Chat */,
+				0949B5F725AC338B00444DF2 /* Matching */,
+				0949B5F625AC337D00444DF2 /* Dynamic */,
+				0949B5F525AC336600444DF2 /* Home */,
+				0949B58125AC043800444DF2 /* About */,
+				0949B4DF25AC043700444DF2 /* Components */,
+				0949B4BA25AC043700444DF2 /* Lab */,
+				0949B52E25AC043700444DF2 /* UIKit */,
+				0949B46925AC016E00444DF2 /* Common */,
+				0949B45F25AC016E00444DF2 /* Debug */,
 				0949B41425ABE6E900444DF2 /* AppDelegate.h */,
 				0949B41525ABE6E900444DF2 /* AppDelegate.m */,
-				0949B41725ABE6E900444DF2 /* SceneDelegate.h */,
-				0949B41825ABE6E900444DF2 /* SceneDelegate.m */,
-				0949B41A25ABE6E900444DF2 /* ViewController.h */,
-				0949B41B25ABE6E900444DF2 /* ViewController.m */,
-				0949B41D25ABE6E900444DF2 /* Main.storyboard */,
 				0949B42025ABE6EA00444DF2 /* Assets.xcassets */,
 				0949B42225ABE6EA00444DF2 /* LaunchScreen.storyboard */,
 				0949B42525ABE6EA00444DF2 /* Info.plist */,
 				0949B42625ABE6EA00444DF2 /* main.m */,
+				0949B45C25AC00EE00444DF2 /* PrefixHeader.pch */,
 			);
 			path = PandaParkiOS;
+			sourceTree = "<group>";
+		};
+		0949B45F25AC016E00444DF2 /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				0949B46525AC016E00444DF2 /* Aspects */,
+				0949B46325AC016E00444DF2 /* NSObject+QDSafe.h */,
+				0949B46125AC016E00444DF2 /* NSObject+QDSafe.m */,
+				0949B46225AC016E00444DF2 /* NSObject+QMUIHook.h */,
+				0949B46825AC016E00444DF2 /* NSObject+QMUIHook.m */,
+				0949B46425AC016E00444DF2 /* QDHookViewController.h */,
+				0949B46025AC016E00444DF2 /* QDHookViewController.m */,
+			);
+			path = Debug;
+			sourceTree = "<group>";
+		};
+		0949B46525AC016E00444DF2 /* Aspects */ = {
+			isa = PBXGroup;
+			children = (
+				0949B46625AC016E00444DF2 /* Aspects.h */,
+				0949B46725AC016E00444DF2 /* Aspects.m */,
+			);
+			path = Aspects;
+			sourceTree = "<group>";
+		};
+		0949B46925AC016E00444DF2 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				0949B46A25AC016E00444DF2 /* Configuration */,
+				0949B47825AC016E00444DF2 /* Utils */,
+				0949B47F25AC016E00444DF2 /* Controllers */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		0949B46A25AC016E00444DF2 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				0949B47525AC016E00444DF2 /* QDThemeManager.h */,
+				0949B46E25AC016E00444DF2 /* QDThemeManager.m */,
+				0949B47325AC016E00444DF2 /* QDThemeProtocol.h */,
+				0949B47025AC016E00444DF2 /* QMUIConfigurationTemplate.h */,
+				0949B47725AC016E00444DF2 /* QMUIConfigurationTemplate.m */,
+				0949B47225AC016E00444DF2 /* QMUIConfigurationTemplateDark.h */,
+				0949B46C25AC016E00444DF2 /* QMUIConfigurationTemplateDark.m */,
+				0949B46D25AC016E00444DF2 /* QMUIConfigurationTemplateGrapefruit.h */,
+				0949B47425AC016E00444DF2 /* QMUIConfigurationTemplateGrapefruit.m */,
+				0949B46B25AC016E00444DF2 /* QMUIConfigurationTemplateGrass.h */,
+				0949B47125AC016E00444DF2 /* QMUIConfigurationTemplateGrass.m */,
+				0949B47625AC016E00444DF2 /* QMUIConfigurationTemplatePinkRose.h */,
+				0949B46F25AC016E00444DF2 /* QMUIConfigurationTemplatePinkRose.m */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		0949B47825AC016E00444DF2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0949B47A25AC016E00444DF2 /* QDCommonUI.h */,
+				0949B47D25AC016E00444DF2 /* QDCommonUI.m */,
+				0949B47E25AC016E00444DF2 /* QDUIHelper.h */,
+				0949B47B25AC016E00444DF2 /* QDUIHelper.m */,
+				0949B47925AC016E00444DF2 /* UIImageEffects.h */,
+				0949B47C25AC016E00444DF2 /* UIImageEffects.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		0949B47F25AC016E00444DF2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0949B48B25AC016E00444DF2 /* QDCommonGridViewController.h */,
+				0949B48625AC016E00444DF2 /* QDCommonGridViewController.m */,
+				0949B48925AC016E00444DF2 /* QDCommonGroupListViewController.h */,
+				0949B48025AC016E00444DF2 /* QDCommonGroupListViewController.m */,
+				0949B48225AC016E00444DF2 /* QDCommonListViewController.h */,
+				0949B48A25AC016E00444DF2 /* QDCommonListViewController.m */,
+				0949B48525AC016E00444DF2 /* QDCommonTableViewController.h */,
+				0949B48E25AC016E00444DF2 /* QDCommonTableViewController.m */,
+				0949B48C25AC016E00444DF2 /* QDCommonViewController.h */,
+				0949B48325AC016E00444DF2 /* QDCommonViewController.m */,
+				0949B48F25AC016E00444DF2 /* QDStyleSelectableTableViewController.h */,
+				0949B48725AC016E00444DF2 /* QDStyleSelectableTableViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0949B4BA25AC043700444DF2 /* Lab */ = {
+			isa = PBXGroup;
+			children = (
+				0949B4C825AC043700444DF2 /* Animation */,
+				0949B4DA25AC043700444DF2 /* QDAllSystemFontsViewController.h */,
+				0949B4D425AC043700444DF2 /* QDAllSystemFontsViewController.m */,
+				0949B4D525AC043700444DF2 /* QDFontPointSizeAndLineHeightViewController.h */,
+				0949B4D925AC043700444DF2 /* QDFontPointSizeAndLineHeightViewController.m */,
+				0949B4DB25AC043700444DF2 /* QDInteractiveDebugViewController.h */,
+				0949B4D325AC043700444DF2 /* QDInteractiveDebugViewController.m */,
+				0949B4C225AC043700444DF2 /* QDLabViewController.h */,
+				0949B4D625AC043700444DF2 /* QDLabViewController.m */,
+				0949B4D825AC043700444DF2 /* QDNavigationBarSmoothEffectViewController.h */,
+				0949B4C625AC043700444DF2 /* QDNavigationBarSmoothEffectViewController.m */,
+				0949B4D725AC043700444DF2 /* QDNavigationBottomAccessoryViewController.h */,
+				0949B4C725AC043700444DF2 /* QDNavigationBottomAccessoryViewController.m */,
+				0949B4BB25AC043700444DF2 /* QMUIInteractiveDebugger */,
+				0949B4DC25AC043700444DF2 /* QMUINavigationBarSmoothEffect */,
+				0949B4C325AC043700444DF2 /* QMUINavigationBottomAccessoryView */,
+			);
+			path = Lab;
+			sourceTree = "<group>";
+		};
+		0949B4BB25AC043700444DF2 /* QMUIInteractiveDebugger */ = {
+			isa = PBXGroup;
+			children = (
+				0949B4BF25AC043700444DF2 /* QMUIInteractiveDebugger.h */,
+				0949B4BC25AC043700444DF2 /* QMUIInteractiveDebugger.m */,
+				0949B4C125AC043700444DF2 /* QMUIInteractiveDebugPanelItem.h */,
+				0949B4BE25AC043700444DF2 /* QMUIInteractiveDebugPanelItem.m */,
+				0949B4BD25AC043700444DF2 /* QMUIInteractiveDebugPanelViewController.h */,
+				0949B4C025AC043700444DF2 /* QMUIInteractiveDebugPanelViewController.m */,
+			);
+			path = QMUIInteractiveDebugger;
+			sourceTree = "<group>";
+		};
+		0949B4C325AC043700444DF2 /* QMUINavigationBottomAccessoryView */ = {
+			isa = PBXGroup;
+			children = (
+				0949B4C425AC043700444DF2 /* UINavigationItem+QMUIBottomAccessoryView.h */,
+				0949B4C525AC043700444DF2 /* UINavigationItem+QMUIBottomAccessoryView.m */,
+			);
+			path = QMUINavigationBottomAccessoryView;
+			sourceTree = "<group>";
+		};
+		0949B4C825AC043700444DF2 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				0949B4CE25AC043700444DF2 /* QDActivityIndicator.h */,
+				0949B4C925AC043700444DF2 /* QDActivityIndicator.m */,
+				0949B4D025AC043700444DF2 /* QDAllAnimationViewController.h */,
+				0949B4CB25AC043700444DF2 /* QDAllAnimationViewController.m */,
+				0949B4CF25AC043700444DF2 /* QDCAShapeLoadingViewController.h */,
+				0949B4CC25AC043700444DF2 /* QDCAShapeLoadingViewController.m */,
+				0949B4CD25AC043700444DF2 /* QDReplicatorLayerViewController.h */,
+				0949B4D225AC043700444DF2 /* QDReplicatorLayerViewController.m */,
+				0949B4D125AC043700444DF2 /* QDRippleAnimationViewController.h */,
+				0949B4CA25AC043700444DF2 /* QDRippleAnimationViewController.m */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		0949B4DC25AC043700444DF2 /* QMUINavigationBarSmoothEffect */ = {
+			isa = PBXGroup;
+			children = (
+				0949B4DE25AC043700444DF2 /* UINavigationBar+QMUISmoothEffect.h */,
+				0949B4DD25AC043700444DF2 /* UINavigationBar+QMUISmoothEffect.m */,
+			);
+			path = QMUINavigationBarSmoothEffect;
+			sourceTree = "<group>";
+		};
+		0949B4DF25AC043700444DF2 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				0949B52725AC043700444DF2 /* QDAssetsManagerViewController.h */,
+				0949B50325AC043700444DF2 /* QDAssetsManagerViewController.m */,
+				0949B50025AC043700444DF2 /* QDBadgeViewController.h */,
+				0949B52925AC043700444DF2 /* QDBadgeViewController.m */,
+				0949B50425AC043700444DF2 /* QDCellHeightCacheViewController.h */,
+				0949B52525AC043700444DF2 /* QDCellHeightCacheViewController.m */,
+				0949B52025AC043700444DF2 /* QDCellHeightKeyCacheViewController.h */,
+				0949B4F325AC043700444DF2 /* QDCellHeightKeyCacheViewController.m */,
+				0949B4FC25AC043700444DF2 /* QDCellSizeKeyCacheViewController.h */,
+				0949B52C25AC043700444DF2 /* QDCellSizeKeyCacheViewController.m */,
+				0949B4F425AC043700444DF2 /* QDCollectionDemoViewController.h */,
+				0949B51F25AC043700444DF2 /* QDCollectionDemoViewController.m */,
+				0949B4E125AC043700444DF2 /* QDCollectionStackDemoViewController.h */,
+				0949B51025AC043700444DF2 /* QDCollectionStackDemoViewController.m */,
+				0949B51425AC043700444DF2 /* QDCollectionViewDemoCell.h */,
+				0949B4ED25AC043700444DF2 /* QDCollectionViewDemoCell.m */,
+				0949B4F525AC043700444DF2 /* QDComponentsViewController.h */,
+				0949B51D25AC043700444DF2 /* QDComponentsViewController.m */,
+				0949B4FE25AC043700444DF2 /* QDConsoleViewController.h */,
+				0949B52B25AC043700444DF2 /* QDConsoleViewController.m */,
+				0949B52425AC043700444DF2 /* QDCustomToastAnimator.h */,
+				0949B50525AC043700444DF2 /* QDCustomToastAnimator.m */,
+				0949B4E625AC043700444DF2 /* QDCustomToastContentView.h */,
+				0949B50A25AC043700444DF2 /* QDCustomToastContentView.m */,
+				0949B51B25AC043700444DF2 /* QDDialogViewController.h */,
+				0949B4F925AC043700444DF2 /* QDDialogViewController.m */,
+				0949B50225AC043700444DF2 /* QDDynamicHeightTableViewCell.h */,
+				0949B52625AC043700444DF2 /* QDDynamicHeightTableViewCell.m */,
+				0949B50B25AC043700444DF2 /* QDEmotionsViewController.h */,
+				0949B4E525AC043700444DF2 /* QDEmotionsViewController.m */,
+				0949B50E25AC043700444DF2 /* QDEmptyViewController.h */,
+				0949B4E325AC043700444DF2 /* QDEmptyViewController.m */,
+				0949B51325AC043700444DF2 /* QDFloatLayoutViewController.h */,
+				0949B4EF25AC043700444DF2 /* QDFloatLayoutViewController.m */,
+				0949B51A25AC043700444DF2 /* QDGridViewController.h */,
+				0949B4F825AC043700444DF2 /* QDGridViewController.m */,
+				0949B51C25AC043700444DF2 /* QDImagePickerExampleViewController.h */,
+				0949B4F725AC043700444DF2 /* QDImagePickerExampleViewController.m */,
+				0949B4E825AC043700444DF2 /* QDImagePreviewViewController1.h */,
+				0949B50925AC043700444DF2 /* QDImagePreviewViewController1.m */,
+				0949B4FB25AC043700444DF2 /* QDImagePreviewViewController2.h */,
+				0949B51825AC043700444DF2 /* QDImagePreviewViewController2.m */,
+				0949B51E25AC043700444DF2 /* QDKeyboardViewController.h */,
+				0949B4F625AC043700444DF2 /* QDKeyboardViewController.m */,
+				0949B4E225AC043700444DF2 /* QDMarqueeLabelViewController.h */,
+				0949B50F25AC043700444DF2 /* QDMarqueeLabelViewController.m */,
+				0949B4F225AC043700444DF2 /* QDModalPresentationViewController.h */,
+				0949B52125AC043700444DF2 /* QDModalPresentationViewController.m */,
+				0949B52225AC043700444DF2 /* QDMoreOperationViewController.h */,
+				0949B4F125AC043700444DF2 /* QDMoreOperationViewController.m */,
+				0949B50725AC043700444DF2 /* QDMultipleDelegatesViewController.h */,
+				0949B4EA25AC043700444DF2 /* QDMultipleDelegatesViewController.m */,
+				0949B51725AC043700444DF2 /* QDMultipleImagePickerPreviewViewController.h */,
+				0949B4EB25AC043700444DF2 /* QDMultipleImagePickerPreviewViewController.m */,
+				0949B4E925AC043700444DF2 /* QDNavigationBarScrollingAnimatorViewController.h */,
+				0949B50825AC043700444DF2 /* QDNavigationBarScrollingAnimatorViewController.m */,
+				0949B4FF25AC043700444DF2 /* QDNavigationBarScrollingSnapAnimatorViewController.h */,
+				0949B52A25AC043700444DF2 /* QDNavigationBarScrollingSnapAnimatorViewController.m */,
+				0949B4FA25AC043700444DF2 /* QDNavigationTitleViewController.h */,
+				0949B51925AC043700444DF2 /* QDNavigationTitleViewController.m */,
+				0949B4E725AC043700444DF2 /* QDPieProgressViewController.h */,
+				0949B50C25AC043700444DF2 /* QDPieProgressViewController.m */,
+				0949B51125AC043700444DF2 /* QDPopupContainerViewController.h */,
+				0949B4E025AC043700444DF2 /* QDPopupContainerViewController.m */,
+				0949B52825AC043700444DF2 /* QDSaveImageToSpecifiedAlbumViewController.h */,
+				0949B50125AC043700444DF2 /* QDSaveImageToSpecifiedAlbumViewController.m */,
+				0949B4EC25AC043700444DF2 /* QDSaveVideoToSpecifiedAlbumViewController.h */,
+				0949B51625AC043700444DF2 /* QDSaveVideoToSpecifiedAlbumViewController.m */,
+				0949B52D25AC043700444DF2 /* QDSingleImagePickerPreviewViewController.h */,
+				0949B4FD25AC043700444DF2 /* QDSingleImagePickerPreviewViewController.m */,
+				0949B50625AC043700444DF2 /* QDStaticTableViewController.h */,
+				0949B52325AC043700444DF2 /* QDStaticTableViewController.m */,
+				0949B4F025AC043700444DF2 /* QDThemeExampleView.h */,
+				0949B51225AC043700444DF2 /* QDThemeExampleView.m */,
+				0949B50D25AC043700444DF2 /* QDThemeViewController.h */,
+				0949B4E425AC043700444DF2 /* QDThemeViewController.m */,
+				0949B51525AC043700444DF2 /* QDToastListViewController.h */,
+				0949B4EE25AC043700444DF2 /* QDToastListViewController.m */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		0949B52E25AC043700444DF2 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				0949B57B25AC043800444DF2 /* QDAlertController.h */,
+				0949B55225AC043700444DF2 /* QDAlertController.m */,
+				0949B55425AC043700444DF2 /* QDButtonEdgeInsetsViewController.h */,
+				0949B57925AC043800444DF2 /* QDButtonEdgeInsetsViewController.m */,
+				0949B56525AC043800444DF2 /* QDButtonViewController.h */,
+				0949B54125AC043700444DF2 /* QDButtonViewController.m */,
+				0949B54925AC043700444DF2 /* QDCAAnimationViewController.h */,
+				0949B56E25AC043800444DF2 /* QDCAAnimationViewController.m */,
+				0949B56D25AC043800444DF2 /* QDChangeNavBarStyleViewController.h */,
+				0949B54A25AC043700444DF2 /* QDChangeNavBarStyleViewController.m */,
+				0949B56025AC043800444DF2 /* QDColorViewController.h */,
+				0949B53325AC043700444DF2 /* QDColorViewController.m */,
+				0949B53025AC043700444DF2 /* QDControlViewController.h */,
+				0949B56425AC043800444DF2 /* QDControlViewController.m */,
+				0949B57225AC043800444DF2 /* QDFillButtonViewController.h */,
+				0949B54625AC043700444DF2 /* QDFillButtonViewController.m */,
+				0949B54C25AC043700444DF2 /* QDFoldCollectionViewLayout.h */,
+				0949B56C25AC043800444DF2 /* QDFoldCollectionViewLayout.m */,
+				0949B54B25AC043700444DF2 /* QDFontViewController.h */,
+				0949B56B25AC043800444DF2 /* QDFontViewController.m */,
+				0949B55B25AC043800444DF2 /* QDGhostButtonViewController.h */,
+				0949B53825AC043700444DF2 /* QDGhostButtonViewController.m */,
+				0949B56F25AC043800444DF2 /* QDImageViewController.h */,
+				0949B54825AC043700444DF2 /* QDImageViewController.m */,
+				0949B56325AC043800444DF2 /* QDImageViewViewController.h */,
+				0949B52F25AC043700444DF2 /* QDImageViewViewController.m */,
+				0949B56225AC043800444DF2 /* QDInsetGroupedTableViewController.h */,
+				0949B53125AC043700444DF2 /* QDInsetGroupedTableViewController.m */,
+				0949B54525AC043700444DF2 /* QDInterceptBackButtonEventViewController.h */,
+				0949B57125AC043800444DF2 /* QDInterceptBackButtonEventViewController.m */,
+				0949B56925AC043800444DF2 /* QDLabelViewController.h */,
+				0949B53D25AC043700444DF2 /* QDLabelViewController.m */,
+				0949B54F25AC043700444DF2 /* QDLargeTitlesViewController.h */,
+				0949B57E25AC043800444DF2 /* QDLargeTitlesViewController.m */,
+				0949B56A25AC043800444DF2 /* QDLinkButtonViewController.h */,
+				0949B53C25AC043700444DF2 /* QDLinkButtonViewController.m */,
+				0949B54025AC043700444DF2 /* QDNavigationBarMaxYViewController.h */,
+				0949B56625AC043800444DF2 /* QDNavigationBarMaxYViewController.m */,
+				0949B54725AC043700444DF2 /* QDNavigationButtonViewController.h */,
+				0949B57025AC043800444DF2 /* QDNavigationButtonViewController.m */,
+				0949B55A25AC043800444DF2 /* QDNavigationListViewController.h */,
+				0949B53A25AC043700444DF2 /* QDNavigationListViewController.m */,
+				0949B57625AC043800444DF2 /* QDNavigationTransitionViewController.h */,
+				0949B55725AC043700444DF2 /* QDNavigationTransitionViewController.m */,
+				0949B57D25AC043800444DF2 /* QDNormalButtonViewController.h */,
+				0949B55125AC043700444DF2 /* QDNormalButtonViewController.m */,
+				0949B57325AC043800444DF2 /* QDObjectMethodsListViewController.h */,
+				0949B54425AC043700444DF2 /* QDObjectMethodsListViewController.m */,
+				0949B57A25AC043800444DF2 /* QDObjectViewController.h */,
+				0949B55325AC043700444DF2 /* QDObjectViewController.m */,
+				0949B53625AC043700444DF2 /* QDOrientationViewController.h */,
+				0949B55D25AC043800444DF2 /* QDOrientationViewController.m */,
+				0949B55625AC043700444DF2 /* QDSearchBarViewController.h */,
+				0949B57725AC043800444DF2 /* QDSearchBarViewController.m */,
+				0949B55825AC043700444DF2 /* QDSearchViewController.h */,
+				0949B53925AC043700444DF2 /* QDSearchViewController.m */,
+				0949B57F25AC043800444DF2 /* QDSliderViewController.h */,
+				0949B54E25AC043700444DF2 /* QDSliderViewController.m */,
+				0949B55F25AC043800444DF2 /* QDTabBarItemViewController.h */,
+				0949B53525AC043700444DF2 /* QDTabBarItemViewController.m */,
+				0949B56125AC043800444DF2 /* QDTableViewCellAccessoryTypeViewController.h */,
+				0949B53225AC043700444DF2 /* QDTableViewCellAccessoryTypeViewController.m */,
+				0949B57425AC043800444DF2 /* QDTableViewCellInsetsViewController.h */,
+				0949B54325AC043700444DF2 /* QDTableViewCellInsetsViewController.m */,
+				0949B55525AC043700444DF2 /* QDTableViewCellSeparatorInsetsViewController.h */,
+				0949B57825AC043800444DF2 /* QDTableViewCellSeparatorInsetsViewController.m */,
+				0949B56725AC043800444DF2 /* QDTableViewHeaderFooterViewController.h */,
+				0949B53F25AC043700444DF2 /* QDTableViewHeaderFooterViewController.m */,
+				0949B54225AC043700444DF2 /* QDTextFieldViewController.h */,
+				0949B57525AC043800444DF2 /* QDTextFieldViewController.m */,
+				0949B53725AC043700444DF2 /* QDTextViewController.h */,
+				0949B55C25AC043800444DF2 /* QDTextViewController.m */,
+				0949B54D25AC043700444DF2 /* QDToolBarButtonViewController.h */,
+				0949B58025AC043800444DF2 /* QDToolBarButtonViewController.m */,
+				0949B55025AC043700444DF2 /* QDUIKitViewController.h */,
+				0949B57C25AC043800444DF2 /* QDUIKitViewController.m */,
+				0949B55925AC043700444DF2 /* QDUIViewBorderViewController.h */,
+				0949B53B25AC043700444DF2 /* QDUIViewBorderViewController.m */,
+				0949B53E25AC043700444DF2 /* QDUIViewDebugViewController.h */,
+				0949B56825AC043800444DF2 /* QDUIViewDebugViewController.m */,
+				0949B53425AC043700444DF2 /* QDUIViewLayoutViewController.h */,
+				0949B55E25AC043800444DF2 /* QDUIViewLayoutViewController.m */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		0949B58125AC043800444DF2 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				0949B58325AC043800444DF2 /* QDAAViewController.h */,
+				0949B58425AC043800444DF2 /* QDAAViewController.m */,
+				0949B58525AC043800444DF2 /* QDAboutViewController.h */,
+				0949B58225AC043800444DF2 /* QDAboutViewController.m */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
+		0949B5F525AC336600444DF2 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0949B5FA25AC33C400444DF2 /* HomeViewController.h */,
+				0949B5FB25AC33C400444DF2 /* HomeViewController.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		0949B5F625AC337D00444DF2 /* Dynamic */ = {
+			isa = PBXGroup;
+			children = (
+				0949B5FF25AC33D100444DF2 /* DynamicViewController.h */,
+				0949B60025AC33D100444DF2 /* DynamicViewController.m */,
+			);
+			path = Dynamic;
+			sourceTree = "<group>";
+		};
+		0949B5F725AC338B00444DF2 /* Matching */ = {
+			isa = PBXGroup;
+			children = (
+				0949B61025AC36CB00444DF2 /* MatchViewController.h */,
+				0949B61125AC36CB00444DF2 /* MatchViewController.m */,
+			);
+			path = Matching;
+			sourceTree = "<group>";
+		};
+		0949B5F825AC339600444DF2 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				0949B60725AC33EF00444DF2 /* ChatViewController.h */,
+				0949B60825AC33EF00444DF2 /* ChatViewController.m */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		0949B5F925AC339E00444DF2 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				0949B60B25AC33F600444DF2 /* MineViewController.h */,
+				0949B60C25AC33F600444DF2 /* MineViewController.m */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		096BD5FF25ADA8C100E0DEE7 /* Third */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Third;
+			sourceTree = "<group>";
+		};
+		096BD64A25ADBF3F00E0DEE7 /* Rescources */ = {
+			isa = PBXGroup;
+			children = (
+				096BD64B25ADBF5F00E0DEE7 /* LottieResource */,
+			);
+			path = Rescources;
+			sourceTree = "<group>";
+		};
+		096BD64B25ADBF5F00E0DEE7 /* LottieResource */ = {
+			isa = PBXGroup;
+			children = (
+				096BD64C25ADBF5F00E0DEE7 /* WODE.json */,
+				096BD64D25ADBF5F00E0DEE7 /* QUANZI.json */,
+				096BD64E25ADBF5F00E0DEE7 /* TIKU.json */,
+				096BD64F25ADBF5F00E0DEE7 /* SHOUYE.json */,
+				096BD65025ADBF5F00E0DEE7 /* XUEXI.json */,
+			);
+			path = LottieResource;
+			sourceTree = "<group>";
+		};
+		096BD65725ADBFEC00E0DEE7 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				096BD65825ADC03300E0DEE7 /* SRNavigationController.h */,
+				096BD65925ADC03300E0DEE7 /* SRNavigationController.m */,
+				096BD65D25ADC05400E0DEE7 /* SRTabBarViewController.h */,
+				096BD65E25ADC05400E0DEE7 /* SRTabBarViewController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		5077CB1EAA9A6562C0C060A6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				638BDA9D111194F441A0498C /* Pods-PandaParkiOS.debug.xcconfig */,
+				7DEE0A7D0D2B4B5AABF3A206 /* Pods-PandaParkiOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E5BB9BE87271DDBD7E9C6ACF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				489C30039CE50327E4ECA591 /* libPods-PandaParkiOS.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,9 +917,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0949B42A25ABE6EA00444DF2 /* Build configuration list for PBXNativeTarget "PandaParkiOS" */;
 			buildPhases = (
+				5E728677E8745C4CF4F0A34A /* [CP] Check Pods Manifest.lock */,
 				0949B40D25ABE6E900444DF2 /* Sources */,
 				0949B40E25ABE6E900444DF2 /* Frameworks */,
 				0949B40F25ABE6E900444DF2 /* Resources */,
+				FA0DD79F16C55FDECB3D6BF0 /* [CP] Copy Pods Resources */,
+				1E6A404BAF47C1FD1AC04975 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,37 +969,210 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				096BD65325ADBF5F00E0DEE7 /* TIKU.json in Resources */,
+				096BD65125ADBF5F00E0DEE7 /* WODE.json in Resources */,
+				096BD65425ADBF5F00E0DEE7 /* SHOUYE.json in Resources */,
 				0949B42425ABE6EA00444DF2 /* LaunchScreen.storyboard in Resources */,
+				096BD65525ADBF5F00E0DEE7 /* XUEXI.json in Resources */,
 				0949B42125ABE6EA00444DF2 /* Assets.xcassets in Resources */,
-				0949B41F25ABE6E900444DF2 /* Main.storyboard in Resources */,
+				096BD65225ADBF5F00E0DEE7 /* QUANZI.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E6A404BAF47C1FD1AC04975 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PandaParkiOS/Pods-PandaParkiOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E728677E8745C4CF4F0A34A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PandaParkiOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA0DD79F16C55FDECB3D6BF0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PandaParkiOS/Pods-PandaParkiOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0949B40D25ABE6E900444DF2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0949B41C25ABE6E900444DF2 /* ViewController.m in Sources */,
+				0949B49D25AC016E00444DF2 /* QDCommonGroupListViewController.m in Sources */,
+				0949B5B225AC043800444DF2 /* QDNavigationTitleViewController.m in Sources */,
+				0949B5CF25AC043800444DF2 /* QDSliderViewController.m in Sources */,
+				0949B5BF25AC043800444DF2 /* QDTableViewCellAccessoryTypeViewController.m in Sources */,
+				0949B49925AC016E00444DF2 /* QMUIConfigurationTemplate.m in Sources */,
+				0949B5BE25AC043800444DF2 /* QDInsetGroupedTableViewController.m in Sources */,
+				0949B5CA25AC043800444DF2 /* QDTableViewCellInsetsViewController.m in Sources */,
+				0949B5B525AC043800444DF2 /* QDModalPresentationViewController.m in Sources */,
+				0949B5C125AC043800444DF2 /* QDTabBarItemViewController.m in Sources */,
+				0949B59825AC043800444DF2 /* QDThemeViewController.m in Sources */,
+				0949B59925AC043800444DF2 /* QDEmotionsViewController.m in Sources */,
+				0949B5BC25AC043800444DF2 /* QDCellSizeKeyCacheViewController.m in Sources */,
+				0949B5AE25AC043800444DF2 /* QDCollectionStackDemoViewController.m in Sources */,
+				0949B5E425AC043800444DF2 /* QDLargeTitlesViewController.m in Sources */,
+				0949B49725AC016E00444DF2 /* QMUIConfigurationTemplateGrass.m in Sources */,
+				0949B59225AC043800444DF2 /* QDAllSystemFontsViewController.m in Sources */,
+				0949B49C25AC016E00444DF2 /* QDCommonUI.m in Sources */,
+				0949B5C625AC043800444DF2 /* QDLinkButtonViewController.m in Sources */,
+				0949B5DE25AC043800444DF2 /* QDInterceptBackButtonEventViewController.m in Sources */,
+				0949B5DB25AC043800444DF2 /* QDFoldCollectionViewLayout.m in Sources */,
+				0949B61225AC36CB00444DF2 /* MatchViewController.m in Sources */,
+				0949B59F25AC043800444DF2 /* QDMoreOperationViewController.m in Sources */,
 				0949B41625ABE6E900444DF2 /* AppDelegate.m in Sources */,
+				0949B49125AC016E00444DF2 /* NSObject+QDSafe.m in Sources */,
+				0949B5FC25AC33C400444DF2 /* HomeViewController.m in Sources */,
+				0949B59B25AC043800444DF2 /* QDMultipleImagePickerPreviewViewController.m in Sources */,
+				0949B5AC25AC043800444DF2 /* QDPieProgressViewController.m in Sources */,
+				0949B49F25AC016E00444DF2 /* QDCommonGridViewController.m in Sources */,
+				0949B5CB25AC043800444DF2 /* QDObjectMethodsListViewController.m in Sources */,
+				0949B5C425AC043800444DF2 /* QDNavigationListViewController.m in Sources */,
+				0949B58725AC043800444DF2 /* QMUIInteractiveDebugPanelItem.m in Sources */,
+				0949B5CE25AC043800444DF2 /* QDChangeNavBarStyleViewController.m in Sources */,
+				0949B60D25AC33F600444DF2 /* MineViewController.m in Sources */,
+				0949B5E725AC043800444DF2 /* QDAAViewController.m in Sources */,
+				0949B5BA25AC043800444DF2 /* QDNavigationBarScrollingSnapAnimatorViewController.m in Sources */,
+				0949B5A125AC043800444DF2 /* QDKeyboardViewController.m in Sources */,
+				0949B58C25AC043800444DF2 /* QDActivityIndicator.m in Sources */,
+				0949B5B825AC043800444DF2 /* QDDynamicHeightTableViewCell.m in Sources */,
+				0949B5D925AC043800444DF2 /* QDUIViewDebugViewController.m in Sources */,
+				0949B5D025AC043800444DF2 /* QDNormalButtonViewController.m in Sources */,
+				0949B5A225AC043800444DF2 /* QDImagePickerExampleViewController.m in Sources */,
+				0949B5D825AC043800444DF2 /* QDNavigationBarMaxYViewController.m in Sources */,
+				0949B59025AC043800444DF2 /* QDReplicatorLayerViewController.m in Sources */,
+				0949B5D125AC043800444DF2 /* QDAlertController.m in Sources */,
+				0949B5B625AC043800444DF2 /* QDStaticTableViewController.m in Sources */,
+				0949B5E025AC043800444DF2 /* QDSearchBarViewController.m in Sources */,
+				0949B58F25AC043800444DF2 /* QDCAShapeLoadingViewController.m in Sources */,
+				0949B5B925AC043800444DF2 /* QDBadgeViewController.m in Sources */,
+				0949B49025AC016E00444DF2 /* QDHookViewController.m in Sources */,
+				0949B5C725AC043800444DF2 /* QDLabelViewController.m in Sources */,
+				0949B59D25AC043800444DF2 /* QDToastListViewController.m in Sources */,
+				0949B59E25AC043800444DF2 /* QDFloatLayoutViewController.m in Sources */,
+				0949B5A525AC043800444DF2 /* QDSingleImagePickerPreviewViewController.m in Sources */,
+				0949B5C525AC043800444DF2 /* QDUIViewBorderViewController.m in Sources */,
+				0949B5CD25AC043800444DF2 /* QDImageViewController.m in Sources */,
+				0949B5A025AC043800444DF2 /* QDCellHeightKeyCacheViewController.m in Sources */,
+				0949B5CC25AC043800444DF2 /* QDFillButtonViewController.m in Sources */,
+				096BD65F25ADC05400E0DEE7 /* SRTabBarViewController.m in Sources */,
+				0949B59625AC043800444DF2 /* QDPopupContainerViewController.m in Sources */,
+				0949B5E625AC043800444DF2 /* QDAboutViewController.m in Sources */,
+				0949B59325AC043800444DF2 /* QDLabViewController.m in Sources */,
+				0949B59125AC043800444DF2 /* QDInteractiveDebugViewController.m in Sources */,
+				0949B5B025AC043800444DF2 /* QDSaveVideoToSpecifiedAlbumViewController.m in Sources */,
+				0949B5E225AC043800444DF2 /* QDButtonEdgeInsetsViewController.m in Sources */,
+				0949B5A325AC043800444DF2 /* QDGridViewController.m in Sources */,
+				0949B59425AC043800444DF2 /* QDFontPointSizeAndLineHeightViewController.m in Sources */,
+				0949B5BD25AC043800444DF2 /* QDImageViewViewController.m in Sources */,
+				0949B58B25AC043800444DF2 /* QDNavigationBottomAccessoryViewController.m in Sources */,
+				0949B4A225AC016E00444DF2 /* QDCommonListViewController.m in Sources */,
+				0949B58825AC043800444DF2 /* QMUIInteractiveDebugPanelViewController.m in Sources */,
+				0949B5D725AC043800444DF2 /* QDControlViewController.m in Sources */,
+				0949B49825AC016E00444DF2 /* QMUIConfigurationTemplateGrapefruit.m in Sources */,
+				0949B59525AC043800444DF2 /* UINavigationBar+QMUISmoothEffect.m in Sources */,
+				0949B5D225AC043800444DF2 /* QDObjectViewController.m in Sources */,
+				0949B5DF25AC043800444DF2 /* QDTextFieldViewController.m in Sources */,
+				0949B5C025AC043800444DF2 /* QDColorViewController.m in Sources */,
+				0949B4A025AC016E00444DF2 /* QDStyleSelectableTableViewController.m in Sources */,
+				0949B49425AC016E00444DF2 /* QMUIConfigurationTemplateDark.m in Sources */,
+				0949B5B325AC043800444DF2 /* QDComponentsViewController.m in Sources */,
+				0949B5D625AC043800444DF2 /* QDUIViewLayoutViewController.m in Sources */,
+				0949B49B25AC016E00444DF2 /* UIImageEffects.m in Sources */,
+				0949B5DA25AC043800444DF2 /* QDFontViewController.m in Sources */,
+				096BD65A25ADC03300E0DEE7 /* SRNavigationController.m in Sources */,
+				0949B5AB25AC043800444DF2 /* QDCustomToastContentView.m in Sources */,
+				0949B5AA25AC043800444DF2 /* QDImagePreviewViewController1.m in Sources */,
+				0949B5B425AC043800444DF2 /* QDCollectionDemoViewController.m in Sources */,
+				0949B5C325AC043800444DF2 /* QDSearchViewController.m in Sources */,
+				0949B58925AC043800444DF2 /* UINavigationItem+QMUIBottomAccessoryView.m in Sources */,
+				0949B5B725AC043800444DF2 /* QDCellHeightCacheViewController.m in Sources */,
+				0949B5BB25AC043800444DF2 /* QDConsoleViewController.m in Sources */,
+				0949B5A425AC043800444DF2 /* QDDialogViewController.m in Sources */,
+				0949B5DD25AC043800444DF2 /* QDNavigationButtonViewController.m in Sources */,
+				0949B5C825AC043800444DF2 /* QDTableViewHeaderFooterViewController.m in Sources */,
+				0949B5DC25AC043800444DF2 /* QDCAAnimationViewController.m in Sources */,
+				0949B5B125AC043800444DF2 /* QDImagePreviewViewController2.m in Sources */,
+				0949B5A725AC043800444DF2 /* QDAssetsManagerViewController.m in Sources */,
+				0949B5D325AC043800444DF2 /* QDNavigationTransitionViewController.m in Sources */,
+				0949B58D25AC043800444DF2 /* QDRippleAnimationViewController.m in Sources */,
+				0949B58625AC043800444DF2 /* QMUIInteractiveDebugger.m in Sources */,
+				0949B5C925AC043800444DF2 /* QDButtonViewController.m in Sources */,
+				0949B58E25AC043800444DF2 /* QDAllAnimationViewController.m in Sources */,
+				0949B60925AC33EF00444DF2 /* ChatViewController.m in Sources */,
+				0949B49A25AC016E00444DF2 /* QDUIHelper.m in Sources */,
+				0949B5A825AC043800444DF2 /* QDCustomToastAnimator.m in Sources */,
+				0949B49E25AC016E00444DF2 /* QDCommonViewController.m in Sources */,
+				0949B59C25AC043800444DF2 /* QDCollectionViewDemoCell.m in Sources */,
+				0949B49325AC016E00444DF2 /* NSObject+QMUIHook.m in Sources */,
+				0949B5E525AC043800444DF2 /* QDToolBarButtonViewController.m in Sources */,
+				0949B5E125AC043800444DF2 /* QDTableViewCellSeparatorInsetsViewController.m in Sources */,
+				0949B60125AC33D100444DF2 /* DynamicViewController.m in Sources */,
+				0949B5C225AC043800444DF2 /* QDGhostButtonViewController.m in Sources */,
+				0949B49525AC016E00444DF2 /* QDThemeManager.m in Sources */,
+				0949B49625AC016E00444DF2 /* QMUIConfigurationTemplatePinkRose.m in Sources */,
+				0949B5A925AC043800444DF2 /* QDNavigationBarScrollingAnimatorViewController.m in Sources */,
+				0949B59A25AC043800444DF2 /* QDMultipleDelegatesViewController.m in Sources */,
+				0949B59725AC043800444DF2 /* QDEmptyViewController.m in Sources */,
+				0949B4A425AC016E00444DF2 /* QDCommonTableViewController.m in Sources */,
+				0949B5D525AC043800444DF2 /* QDOrientationViewController.m in Sources */,
 				0949B42725ABE6EA00444DF2 /* main.m in Sources */,
-				0949B41925ABE6E900444DF2 /* SceneDelegate.m in Sources */,
+				0949B5A625AC043800444DF2 /* QDSaveImageToSpecifiedAlbumViewController.m in Sources */,
+				0949B5AF25AC043800444DF2 /* QDThemeExampleView.m in Sources */,
+				0949B5D425AC043800444DF2 /* QDTextViewController.m in Sources */,
+				0949B5E325AC043800444DF2 /* QDUIKitViewController.m in Sources */,
+				0949B5AD25AC043800444DF2 /* QDMarqueeLabelViewController.m in Sources */,
+				0949B49225AC016E00444DF2 /* Aspects.m in Sources */,
+				0949B58A25AC043800444DF2 /* QDNavigationBarSmoothEffectViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0949B41D25ABE6E900444DF2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0949B41E25ABE6E900444DF2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0949B42225ABE6EA00444DF2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -288,12 +1298,15 @@
 		};
 		0949B42B25ABE6EA00444DF2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 638BDA9D111194F441A0498C /* Pods-PandaParkiOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S58CK2GNVZ;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PandaParkiOS/PrefixHeader.pch";
 				INFOPLIST_FILE = PandaParkiOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,12 +1319,15 @@
 		};
 		0949B42C25ABE6EA00444DF2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DEE0A7D0D2B4B5AABF3A206 /* Pods-PandaParkiOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S58CK2GNVZ;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PandaParkiOS/PrefixHeader.pch";
 				INFOPLIST_FILE = PandaParkiOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

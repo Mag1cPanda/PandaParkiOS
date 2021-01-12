@@ -1,8 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -11,15 +14,50 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch_background" translatesAutoresizingMaskIntoConstraints="NO" id="NYP-Pf-CAU">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch_logo" translatesAutoresizingMaskIntoConstraints="NO" id="Jc2-RP-tDK">
+                                <rect key="frame" x="127" y="84" width="160" height="210"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="210" id="JaD-RL-4Ib"/>
+                                    <constraint firstAttribute="width" constant="160" id="jey-X6-SKJ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="© 2020 QMUI Team All Rights Reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6eX-Uq-Fp7">
+                                <rect key="frame" x="92.5" y="817.5" width="229" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dQ1-Dn-ayu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NYP-Pf-CAU" firstAttribute="trailing" secondItem="dQ1-Dn-ayu" secondAttribute="trailing" id="6uG-q9-Vmz"/>
+                            <constraint firstItem="dQ1-Dn-ayu" firstAttribute="bottom" secondItem="6eX-Uq-Fp7" secondAttribute="bottom" constant="30" id="DmS-EO-B6c"/>
+                            <constraint firstItem="Jc2-RP-tDK" firstAttribute="top" secondItem="dQ1-Dn-ayu" secondAttribute="top" constant="40" id="I7X-AO-8QE"/>
+                            <constraint firstItem="Jc2-RP-tDK" firstAttribute="centerX" secondItem="NYP-Pf-CAU" secondAttribute="centerX" id="PGe-u1-Vc9"/>
+                            <constraint firstAttribute="bottom" secondItem="NYP-Pf-CAU" secondAttribute="bottom" id="c3O-fH-szv"/>
+                            <constraint firstItem="6eX-Uq-Fp7" firstAttribute="centerX" secondItem="NYP-Pf-CAU" secondAttribute="centerX" id="ixK-9Q-PIv"/>
+                            <constraint firstItem="NYP-Pf-CAU" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="oCY-tr-bAE"/>
+                            <constraint firstItem="NYP-Pf-CAU" firstAttribute="leading" secondItem="dQ1-Dn-ayu" secondAttribute="leading" id="w9N-Z8-3D1"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="launch_background" width="375" height="667"/>
+        <image name="launch_logo" width="160" height="210"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
