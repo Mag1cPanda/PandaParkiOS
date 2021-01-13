@@ -66,17 +66,22 @@ static NSString* const kDefaultTextColor = @"#FFAB1A";
     
     HomeViewController *homeVC = [HomeViewController new];
     homeVC.title = kHomeText;
+    homeVC.hidesBottomBarWhenPushed = false;
     SRNavigationController *homeNav = [[SRNavigationController alloc] initWithRootViewController:homeVC];
     DynamicViewController *dynamicVC = [DynamicViewController new];
+    dynamicVC.hidesBottomBarWhenPushed = false;
     dynamicVC.title = kDynamicText;
     SRNavigationController *dynamicNav = [[SRNavigationController alloc] initWithRootViewController:dynamicVC];
     MatchViewController *matchVC = [MatchViewController new];
+    matchVC.hidesBottomBarWhenPushed = false;
     matchVC.title = kMatchText;
     SRNavigationController *matchNav = [[SRNavigationController alloc] initWithRootViewController:matchVC];
     ChatViewController *chatVC = [ChatViewController new];
+    chatVC.hidesBottomBarWhenPushed =false;
     chatVC.title = kChatText;
     SRNavigationController *chatNav = [[SRNavigationController alloc] initWithRootViewController:chatVC];
     MineViewController *mineVC = [MineViewController new];
+    mineVC.hidesBottomBarWhenPushed = false;
     mineVC.title = kMineText;
     SRNavigationController *mineNav = [[SRNavigationController alloc] initWithRootViewController:mineVC];
     

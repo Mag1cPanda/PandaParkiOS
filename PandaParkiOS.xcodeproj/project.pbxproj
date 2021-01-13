@@ -140,6 +140,24 @@
 		096BD65525ADBF5F00E0DEE7 /* XUEXI.json in Resources */ = {isa = PBXBuildFile; fileRef = 096BD65025ADBF5F00E0DEE7 /* XUEXI.json */; };
 		096BD65A25ADC03300E0DEE7 /* SRNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 096BD65925ADC03300E0DEE7 /* SRNavigationController.m */; };
 		096BD65F25ADC05400E0DEE7 /* SRTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 096BD65E25ADC05400E0DEE7 /* SRTabBarViewController.m */; };
+		096BD66425AEB07D00E0DEE7 /* TDTouchID.m in Sources */ = {isa = PBXBuildFile; fileRef = 096BD66225AEB07D00E0DEE7 /* TDTouchID.m */; };
+		096BD67025AEB23A00E0DEE7 /* YYFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 096BD66F25AEB23A00E0DEE7 /* YYFPSLabel.m */; };
+		096BD67825AED24300E0DEE7 /* SVGADemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 096BD67725AED24300E0DEE7 /* SVGADemoVC.m */; };
+		096BD68725AED2E300E0DEE7 /* Rocket.svga in Resources */ = {isa = PBXBuildFile; fileRef = 096BD67D25AED2E300E0DEE7 /* Rocket.svga */; };
+		096BD68825AED2E300E0DEE7 /* heartbeat.svga in Resources */ = {isa = PBXBuildFile; fileRef = 096BD67E25AED2E300E0DEE7 /* heartbeat.svga */; };
+		096BD68A25AED2E300E0DEE7 /* Goddess.svga in Resources */ = {isa = PBXBuildFile; fileRef = 096BD68025AED2E300E0DEE7 /* Goddess.svga */; };
+		096BD69325AEDE2F00E0DEE7 /* kingset.svga in Resources */ = {isa = PBXBuildFile; fileRef = 096BD69225AEDE2F00E0DEE7 /* kingset.svga */; };
+		096BD69A25AEE03300E0DEE7 /* rose.svga in Resources */ = {isa = PBXBuildFile; fileRef = 096BD69925AEE03300E0DEE7 /* rose.svga */; };
+		096BD69D25AEE2CC00E0DEE7 /* Posche.svga in Resources */ = {isa = PBXBuildFile; fileRef = 096BD69C25AEE2CC00E0DEE7 /* Posche.svga */; };
+		096BD6A425AEEE8300E0DEE7 /* SRDouYinTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 096BD6A325AEEE8300E0DEE7 /* SRDouYinTabBarController.m */; };
+		096BD6A825AEEEBC00E0DEE7 /* SRDouYinTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 096BD6A725AEEEBC00E0DEE7 /* SRDouYinTabBar.m */; };
+		096BD6AE25AEF93700E0DEE7 /* LXYDouYinTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 096BD6AA25AEF93600E0DEE7 /* LXYDouYinTabBarController.m */; };
+		096BD6AF25AEF93700E0DEE7 /* LXYDouYinTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 096BD6AD25AEF93700E0DEE7 /* LXYDouYinTabBar.m */; };
+		096BD6B325AEFA7F00E0DEE7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 096BD6B225AEFA7E00E0DEE7 /* ViewController.m */; };
+		096BD6B725AF01D900E0DEE7 /* RTMPDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 096BD6B625AF01D900E0DEE7 /* RTMPDemoViewController.m */; };
+		096BD6C125AF077400E0DEE7 /* YYStarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 096BD6BE25AF077400E0DEE7 /* YYStarView.m */; };
+		096BD6C225AF077400E0DEE7 /* YYStarView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 096BD6BF25AF077400E0DEE7 /* YYStarView.bundle */; };
+		096BD6C625AF079500E0DEE7 /* StarDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 096BD6C525AF079500E0DEE7 /* StarDemoViewController.m */; };
 		3EA0F7FE451F03708F7877DA /* libPods-PandaParkiOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 489C30039CE50327E4ECA591 /* libPods-PandaParkiOS.a */; };
 /* End PBXBuildFile section */
 
@@ -406,6 +424,35 @@
 		096BD65925ADC03300E0DEE7 /* SRNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRNavigationController.m; sourceTree = "<group>"; };
 		096BD65D25ADC05400E0DEE7 /* SRTabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRTabBarViewController.h; sourceTree = "<group>"; };
 		096BD65E25ADC05400E0DEE7 /* SRTabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRTabBarViewController.m; sourceTree = "<group>"; };
+		096BD66225AEB07D00E0DEE7 /* TDTouchID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDTouchID.m; sourceTree = "<group>"; };
+		096BD66325AEB07D00E0DEE7 /* TDTouchID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDTouchID.h; sourceTree = "<group>"; };
+		096BD66E25AEB23A00E0DEE7 /* YYFPSLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYFPSLabel.h; sourceTree = "<group>"; };
+		096BD66F25AEB23A00E0DEE7 /* YYFPSLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYFPSLabel.m; sourceTree = "<group>"; };
+		096BD67625AED24300E0DEE7 /* SVGADemoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SVGADemoVC.h; sourceTree = "<group>"; };
+		096BD67725AED24300E0DEE7 /* SVGADemoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SVGADemoVC.m; sourceTree = "<group>"; };
+		096BD67D25AED2E300E0DEE7 /* Rocket.svga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Rocket.svga; sourceTree = "<group>"; };
+		096BD67E25AED2E300E0DEE7 /* heartbeat.svga */ = {isa = PBXFileReference; lastKnownFileType = file; path = heartbeat.svga; sourceTree = "<group>"; };
+		096BD68025AED2E300E0DEE7 /* Goddess.svga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Goddess.svga; sourceTree = "<group>"; };
+		096BD69225AEDE2F00E0DEE7 /* kingset.svga */ = {isa = PBXFileReference; lastKnownFileType = file; path = kingset.svga; sourceTree = "<group>"; };
+		096BD69925AEE03300E0DEE7 /* rose.svga */ = {isa = PBXFileReference; lastKnownFileType = file; path = rose.svga; sourceTree = "<group>"; };
+		096BD69C25AEE2CC00E0DEE7 /* Posche.svga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Posche.svga; sourceTree = "<group>"; };
+		096BD6A225AEEE8300E0DEE7 /* SRDouYinTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRDouYinTabBarController.h; sourceTree = "<group>"; };
+		096BD6A325AEEE8300E0DEE7 /* SRDouYinTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRDouYinTabBarController.m; sourceTree = "<group>"; };
+		096BD6A625AEEEBC00E0DEE7 /* SRDouYinTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRDouYinTabBar.h; sourceTree = "<group>"; };
+		096BD6A725AEEEBC00E0DEE7 /* SRDouYinTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRDouYinTabBar.m; sourceTree = "<group>"; };
+		096BD6AA25AEF93600E0DEE7 /* LXYDouYinTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXYDouYinTabBarController.m; sourceTree = "<group>"; };
+		096BD6AB25AEF93700E0DEE7 /* LXYDouYinTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXYDouYinTabBarController.h; sourceTree = "<group>"; };
+		096BD6AC25AEF93700E0DEE7 /* LXYDouYinTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXYDouYinTabBar.h; sourceTree = "<group>"; };
+		096BD6AD25AEF93700E0DEE7 /* LXYDouYinTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXYDouYinTabBar.m; sourceTree = "<group>"; };
+		096BD6B125AEFA7E00E0DEE7 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		096BD6B225AEFA7E00E0DEE7 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		096BD6B525AF01D900E0DEE7 /* RTMPDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTMPDemoViewController.h; sourceTree = "<group>"; };
+		096BD6B625AF01D900E0DEE7 /* RTMPDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTMPDemoViewController.m; sourceTree = "<group>"; };
+		096BD6BE25AF077400E0DEE7 /* YYStarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYStarView.m; sourceTree = "<group>"; };
+		096BD6BF25AF077400E0DEE7 /* YYStarView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = YYStarView.bundle; sourceTree = "<group>"; };
+		096BD6C025AF077400E0DEE7 /* YYStarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYStarView.h; sourceTree = "<group>"; };
+		096BD6C425AF079500E0DEE7 /* StarDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StarDemoViewController.h; sourceTree = "<group>"; };
+		096BD6C525AF079500E0DEE7 /* StarDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StarDemoViewController.m; sourceTree = "<group>"; };
 		489C30039CE50327E4ECA591 /* libPods-PandaParkiOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PandaParkiOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		638BDA9D111194F441A0498C /* Pods-PandaParkiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PandaParkiOS.debug.xcconfig"; path = "Target Support Files/Pods-PandaParkiOS/Pods-PandaParkiOS.debug.xcconfig"; sourceTree = "<group>"; };
 		7DEE0A7D0D2B4B5AABF3A206 /* Pods-PandaParkiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PandaParkiOS.release.xcconfig"; path = "Target Support Files/Pods-PandaParkiOS/Pods-PandaParkiOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -444,9 +491,9 @@
 		0949B41325ABE6E900444DF2 /* PandaParkiOS */ = {
 			isa = PBXGroup;
 			children = (
+				096BD66125AEB05900E0DEE7 /* Vendor */,
 				096BD65725ADBFEC00E0DEE7 /* Base */,
 				096BD64A25ADBF3F00E0DEE7 /* Rescources */,
-				096BD5FF25ADA8C100E0DEE7 /* Third */,
 				0949B5F925AC339E00444DF2 /* Mine */,
 				0949B5F825AC339600444DF2 /* Chat */,
 				0949B5F725AC338B00444DF2 /* Matching */,
@@ -815,6 +862,12 @@
 			children = (
 				0949B5FA25AC33C400444DF2 /* HomeViewController.h */,
 				0949B5FB25AC33C400444DF2 /* HomeViewController.m */,
+				096BD67625AED24300E0DEE7 /* SVGADemoVC.h */,
+				096BD67725AED24300E0DEE7 /* SVGADemoVC.m */,
+				096BD6B525AF01D900E0DEE7 /* RTMPDemoViewController.h */,
+				096BD6B625AF01D900E0DEE7 /* RTMPDemoViewController.m */,
+				096BD6C425AF079500E0DEE7 /* StarDemoViewController.h */,
+				096BD6C525AF079500E0DEE7 /* StarDemoViewController.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -855,16 +908,10 @@
 			path = Mine;
 			sourceTree = "<group>";
 		};
-		096BD5FF25ADA8C100E0DEE7 /* Third */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Third;
-			sourceTree = "<group>";
-		};
 		096BD64A25ADBF3F00E0DEE7 /* Rescources */ = {
 			isa = PBXGroup;
 			children = (
+				096BD67A25AED2E300E0DEE7 /* SVGARescources */,
 				096BD64B25ADBF5F00E0DEE7 /* LottieResource */,
 			);
 			path = Rescources;
@@ -889,8 +936,53 @@
 				096BD65925ADC03300E0DEE7 /* SRNavigationController.m */,
 				096BD65D25ADC05400E0DEE7 /* SRTabBarViewController.h */,
 				096BD65E25ADC05400E0DEE7 /* SRTabBarViewController.m */,
+				096BD6A225AEEE8300E0DEE7 /* SRDouYinTabBarController.h */,
+				096BD6A325AEEE8300E0DEE7 /* SRDouYinTabBarController.m */,
+				096BD6A625AEEEBC00E0DEE7 /* SRDouYinTabBar.h */,
+				096BD6A725AEEEBC00E0DEE7 /* SRDouYinTabBar.m */,
+				096BD6AC25AEF93700E0DEE7 /* LXYDouYinTabBar.h */,
+				096BD6AD25AEF93700E0DEE7 /* LXYDouYinTabBar.m */,
+				096BD6AB25AEF93700E0DEE7 /* LXYDouYinTabBarController.h */,
+				096BD6AA25AEF93600E0DEE7 /* LXYDouYinTabBarController.m */,
+				096BD6B125AEFA7E00E0DEE7 /* ViewController.h */,
+				096BD6B225AEFA7E00E0DEE7 /* ViewController.m */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		096BD66125AEB05900E0DEE7 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				096BD6BD25AF077400E0DEE7 /* YYStarView */,
+				096BD66E25AEB23A00E0DEE7 /* YYFPSLabel.h */,
+				096BD66F25AEB23A00E0DEE7 /* YYFPSLabel.m */,
+				096BD66325AEB07D00E0DEE7 /* TDTouchID.h */,
+				096BD66225AEB07D00E0DEE7 /* TDTouchID.m */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		096BD67A25AED2E300E0DEE7 /* SVGARescources */ = {
+			isa = PBXGroup;
+			children = (
+				096BD69C25AEE2CC00E0DEE7 /* Posche.svga */,
+				096BD69225AEDE2F00E0DEE7 /* kingset.svga */,
+				096BD67D25AED2E300E0DEE7 /* Rocket.svga */,
+				096BD67E25AED2E300E0DEE7 /* heartbeat.svga */,
+				096BD68025AED2E300E0DEE7 /* Goddess.svga */,
+				096BD69925AEE03300E0DEE7 /* rose.svga */,
+			);
+			path = SVGARescources;
+			sourceTree = "<group>";
+		};
+		096BD6BD25AF077400E0DEE7 /* YYStarView */ = {
+			isa = PBXGroup;
+			children = (
+				096BD6BE25AF077400E0DEE7 /* YYStarView.m */,
+				096BD6BF25AF077400E0DEE7 /* YYStarView.bundle */,
+				096BD6C025AF077400E0DEE7 /* YYStarView.h */,
+			);
+			path = YYStarView;
 			sourceTree = "<group>";
 		};
 		5077CB1EAA9A6562C0C060A6 /* Pods */ = {
@@ -973,9 +1065,16 @@
 				096BD65125ADBF5F00E0DEE7 /* WODE.json in Resources */,
 				096BD65425ADBF5F00E0DEE7 /* SHOUYE.json in Resources */,
 				0949B42425ABE6EA00444DF2 /* LaunchScreen.storyboard in Resources */,
+				096BD68725AED2E300E0DEE7 /* Rocket.svga in Resources */,
 				096BD65525ADBF5F00E0DEE7 /* XUEXI.json in Resources */,
+				096BD69D25AEE2CC00E0DEE7 /* Posche.svga in Resources */,
+				096BD68A25AED2E300E0DEE7 /* Goddess.svga in Resources */,
+				096BD6C225AF077400E0DEE7 /* YYStarView.bundle in Resources */,
 				0949B42125ABE6EA00444DF2 /* Assets.xcassets in Resources */,
 				096BD65225ADBF5F00E0DEE7 /* QUANZI.json in Resources */,
+				096BD69A25AEE03300E0DEE7 /* rose.svga in Resources */,
+				096BD68825AED2E300E0DEE7 /* heartbeat.svga in Resources */,
+				096BD69325AEDE2F00E0DEE7 /* kingset.svga in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1052,6 +1151,8 @@
 				0949B5C125AC043800444DF2 /* QDTabBarItemViewController.m in Sources */,
 				0949B59825AC043800444DF2 /* QDThemeViewController.m in Sources */,
 				0949B59925AC043800444DF2 /* QDEmotionsViewController.m in Sources */,
+				096BD67825AED24300E0DEE7 /* SVGADemoVC.m in Sources */,
+				096BD6A425AEEE8300E0DEE7 /* SRDouYinTabBarController.m in Sources */,
 				0949B5BC25AC043800444DF2 /* QDCellSizeKeyCacheViewController.m in Sources */,
 				0949B5AE25AC043800444DF2 /* QDCollectionStackDemoViewController.m in Sources */,
 				0949B5E425AC043800444DF2 /* QDLargeTitlesViewController.m in Sources */,
@@ -1075,6 +1176,7 @@
 				0949B5CE25AC043800444DF2 /* QDChangeNavBarStyleViewController.m in Sources */,
 				0949B60D25AC33F600444DF2 /* MineViewController.m in Sources */,
 				0949B5E725AC043800444DF2 /* QDAAViewController.m in Sources */,
+				096BD67025AEB23A00E0DEE7 /* YYFPSLabel.m in Sources */,
 				0949B5BA25AC043800444DF2 /* QDNavigationBarScrollingSnapAnimatorViewController.m in Sources */,
 				0949B5A125AC043800444DF2 /* QDKeyboardViewController.m in Sources */,
 				0949B58C25AC043800444DF2 /* QDActivityIndicator.m in Sources */,
@@ -1082,6 +1184,7 @@
 				0949B5D925AC043800444DF2 /* QDUIViewDebugViewController.m in Sources */,
 				0949B5D025AC043800444DF2 /* QDNormalButtonViewController.m in Sources */,
 				0949B5A225AC043800444DF2 /* QDImagePickerExampleViewController.m in Sources */,
+				096BD66425AEB07D00E0DEE7 /* TDTouchID.m in Sources */,
 				0949B5D825AC043800444DF2 /* QDNavigationBarMaxYViewController.m in Sources */,
 				0949B59025AC043800444DF2 /* QDReplicatorLayerViewController.m in Sources */,
 				0949B5D125AC043800444DF2 /* QDAlertController.m in Sources */,
@@ -1097,17 +1200,22 @@
 				0949B5C525AC043800444DF2 /* QDUIViewBorderViewController.m in Sources */,
 				0949B5CD25AC043800444DF2 /* QDImageViewController.m in Sources */,
 				0949B5A025AC043800444DF2 /* QDCellHeightKeyCacheViewController.m in Sources */,
+				096BD6B325AEFA7F00E0DEE7 /* ViewController.m in Sources */,
 				0949B5CC25AC043800444DF2 /* QDFillButtonViewController.m in Sources */,
 				096BD65F25ADC05400E0DEE7 /* SRTabBarViewController.m in Sources */,
 				0949B59625AC043800444DF2 /* QDPopupContainerViewController.m in Sources */,
 				0949B5E625AC043800444DF2 /* QDAboutViewController.m in Sources */,
 				0949B59325AC043800444DF2 /* QDLabViewController.m in Sources */,
 				0949B59125AC043800444DF2 /* QDInteractiveDebugViewController.m in Sources */,
+				096BD6AF25AEF93700E0DEE7 /* LXYDouYinTabBar.m in Sources */,
 				0949B5B025AC043800444DF2 /* QDSaveVideoToSpecifiedAlbumViewController.m in Sources */,
+				096BD6B725AF01D900E0DEE7 /* RTMPDemoViewController.m in Sources */,
+				096BD6C125AF077400E0DEE7 /* YYStarView.m in Sources */,
 				0949B5E225AC043800444DF2 /* QDButtonEdgeInsetsViewController.m in Sources */,
 				0949B5A325AC043800444DF2 /* QDGridViewController.m in Sources */,
 				0949B59425AC043800444DF2 /* QDFontPointSizeAndLineHeightViewController.m in Sources */,
 				0949B5BD25AC043800444DF2 /* QDImageViewViewController.m in Sources */,
+				096BD6A825AEEEBC00E0DEE7 /* SRDouYinTabBar.m in Sources */,
 				0949B58B25AC043800444DF2 /* QDNavigationBottomAccessoryViewController.m in Sources */,
 				0949B4A225AC016E00444DF2 /* QDCommonListViewController.m in Sources */,
 				0949B58825AC043800444DF2 /* QMUIInteractiveDebugPanelViewController.m in Sources */,
@@ -1145,6 +1253,7 @@
 				0949B60925AC33EF00444DF2 /* ChatViewController.m in Sources */,
 				0949B49A25AC016E00444DF2 /* QDUIHelper.m in Sources */,
 				0949B5A825AC043800444DF2 /* QDCustomToastAnimator.m in Sources */,
+				096BD6C625AF079500E0DEE7 /* StarDemoViewController.m in Sources */,
 				0949B49E25AC016E00444DF2 /* QDCommonViewController.m in Sources */,
 				0949B59C25AC043800444DF2 /* QDCollectionViewDemoCell.m in Sources */,
 				0949B49325AC016E00444DF2 /* NSObject+QMUIHook.m in Sources */,
@@ -1167,6 +1276,7 @@
 				0949B5AD25AC043800444DF2 /* QDMarqueeLabelViewController.m in Sources */,
 				0949B49225AC016E00444DF2 /* Aspects.m in Sources */,
 				0949B58A25AC043800444DF2 /* QDNavigationBarSmoothEffectViewController.m in Sources */,
+				096BD6AE25AEF93700E0DEE7 /* LXYDouYinTabBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

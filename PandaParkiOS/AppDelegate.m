@@ -7,9 +7,13 @@
 
 #import "AppDelegate.h"
 #import <DoraemonKit/DoraemonManager.h>
+#import "YYFPSLabel.h"
 #import <RTMPCHybirdEngine/ARRtmpSDK.h>
 
 #import "SRTabBarViewController.h"
+#import "SRNavigationController.h"
+#import "SRDouYinTabBarController.h"
+#import "LXYDouYinTabBarController.h"
 
 #import "HomeViewController.h"
 #import "DynamicViewController.h"
@@ -29,6 +33,7 @@
 #import "QMUIConfigurationTemplateDark.h"
 
 @interface AppDelegate ()
+<UITabBarControllerDelegate>
 
 @end
 
@@ -47,51 +52,28 @@
     self.window = [[UIWindow alloc] init];
     [self didInitWindow];
     
+    [self.window addSubview:[[YYFPSLabel alloc] initWithFrame:CGRectMake(20, 20, 0, 0)]];
+    
     
     return YES;
 }
 
 - (void)didInitWindow {
-    SRTabBarViewController *tabBarVC = [SRTabBarViewController new];
-    self.window.rootViewController = tabBarVC;
-//    self.window.rootViewController = [self generateWindowRootViewController];
+    
+    
+    //普通TabBar
+    self.window.rootViewController = [SRTabBarViewController new];
+    
+    //抖音、小红书TabBar
+//    SRDouYinTabBarController *tabBarCtrl = [[SRDouYinTabBarController alloc] init];
+//    LXYDouYinTabBarController *tabBarCtrl = [[LXYDouYinTabBarController alloc] init];
+//    tabBarCtrl.delegate = self;
+//    self.window.rootViewController = tabBarCtrl;
+    
+    //QMUI Demo
 //    self.window.rootViewController = [self generateQMUIDemo];
     [self.window makeKeyAndVisible];
 //    [self startLaunchingAnimation];
-}
-
-- (UIViewController *)generateWindowRootViewController
-{
-    QMUITabBarViewController *tabBarVC = [QMUITabBarViewController new];
-    
-    HomeViewController *homeVC = [HomeViewController new];
-    homeVC.hidesBottomBarWhenPushed = NO;
-    QMUINavigationController *homeNav = [[QMUINavigationController alloc] initWithRootViewController:homeVC];
-    homeVC.tabBarItem = [QDUIHelper tabBarItemWithTitle:@"Home" image:UIImageMake(@"icon_tabbar_uikit") selectedImage:UIImageMake(@"icon_tabbar_uikit_selected") tag:0];
-    
-    DynamicViewController *dynamicVC = [DynamicViewController new];
-    homeVC.hidesBottomBarWhenPushed = NO;
-    QMUINavigationController *dynamicNav = [[QMUINavigationController alloc] initWithRootViewController:dynamicVC];
-    dynamicVC.tabBarItem = [QDUIHelper tabBarItemWithTitle:@"Dynamic" image:UIImageMake(@"icon_tabbar_uikit") selectedImage:UIImageMake(@"icon_tabbar_uikit_selected") tag:1];
-    
-    MatchViewController *matchVC = [MatchViewController new];
-    matchVC.hidesBottomBarWhenPushed = NO;
-    QMUINavigationController *matchNav = [[QMUINavigationController alloc] initWithRootViewController:matchVC];
-    matchVC.tabBarItem = [QDUIHelper tabBarItemWithTitle:@"Match" image:UIImageMake(@"icon_tabbar_uikit") selectedImage:UIImageMake(@"icon_tabbar_uikit_selected") tag:2];
-    
-    ChatViewController *chatVC = [ChatViewController new];
-    chatVC.hidesBottomBarWhenPushed = NO;
-    QMUINavigationController *chatNav = [[QMUINavigationController alloc] initWithRootViewController:chatVC];
-    chatVC.tabBarItem = [QDUIHelper tabBarItemWithTitle:@"Chat" image:UIImageMake(@"icon_tabbar_uikit") selectedImage:UIImageMake(@"icon_tabbar_uikit_selected") tag:3];
-    
-    MineViewController *mineVC = [MineViewController new];
-    mineVC.hidesBottomBarWhenPushed = NO;
-    QMUINavigationController *mineNav = [[QMUINavigationController alloc] initWithRootViewController:mineVC];
-    mineVC.tabBarItem = [QDUIHelper tabBarItemWithTitle:@"QMUIKit" image:UIImageMake(@"icon_tabbar_uikit") selectedImage:UIImageMake(@"icon_tabbar_uikit_selected") tag:4];
-    
-    
-    tabBarVC.viewControllers = @[homeNav, dynamicNav, matchNav, chatNav, mineNav];
-    return tabBarVC;
 }
 
 - (UIViewController *)generateQMUIDemo {
@@ -179,6 +161,50 @@
     
     // 更新表情 icon 的颜色
     [QDUIHelper updateEmotionImages];
+}
+
+
+///这里当你需要登录才能点进这个VC的时候可以在这个方法里处理逻辑
+//- (BOOL) shouldxxxx，是否允许做某个操作。
+//- (void) willxxx，将要做某个操作。
+//- (void) didxxx，完成某个操作。
+//是否允许选中某个 viewController。
+//YES，允许选中，NO，不允许选中。
+- (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController {
+    //viewController 为 tabBarController 中 viewControllers 数组中的对象。
+//    NSInteger index = [tabBarController.viewControllers indexOfObject:viewController];
+//    if (!isLogin) {
+//        if (index == 2 || index == 3) {
+//            Class class = NSClassFromString(@"PSLoginAndRegisterViewController");
+//            [tabBarController.selectedViewController presentViewController:[class new] animated:YES completion:nil];
+//            return NO;
+//        }
+//    }
+    return YES;
+}
+
+- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController {
+    //判断，然后让第一个页面刷新。
+    NSInteger index = [tabBarController.viewControllers indexOfObject:viewController];
+    NSLog(@"index------>>>%ld",index);
+    
+    //这里是为了动态修改tabbar的背景色
+    [[NSNotificationCenter defaultCenter]postNotificationName:@"tabbarSelectedIndexNotification" object:nil userInfo:@{@"index":@(index)}];
+    
+//    SRDouYinTabBarController *tabbar_c = (SRDouYinTabBarController *)tabBarController;
+    LXYDouYinTabBarController *tabbar_c = (LXYDouYinTabBarController *)tabBarController;
+    
+    CGRect frame = tabbar_c.douyinTabBar.indicatorLine.frame;
+    if (index == 0) {
+        frame.origin.x = 1/15.0f*[UIScreen mainScreen].bounds.size.width;
+    }else if (index == 1){
+        frame.origin.x = 4/15.0f*[UIScreen mainScreen].bounds.size.width;
+    }else if (index == 2){
+        frame.origin.x = 10/15.0f*[UIScreen mainScreen].bounds.size.width;
+    }else if (index == 3){
+        frame.origin.x = 13/15.0f*[UIScreen mainScreen].bounds.size.width;
+    }
+    tabbar_c.douyinTabBar.indicatorLine.frame = frame;
 }
 
 
