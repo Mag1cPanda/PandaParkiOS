@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DynamicViewController : UIViewController
+@interface DynamicViewController : QMUICommonTableViewController
 
 @end
 

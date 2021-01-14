@@ -30,15 +30,15 @@
 
 -(void)showInModal
 {
-    QMUIAlertAction *cancel = [QMUIAlertAction actionWithTitle:@"取消" style:QMUIAlertActionStyleDefault handler:^(__kindof QMUIAlertController * _Nonnull aAlertController, QMUIAlertAction * _Nonnull action) {
-        
-    }];
+//    QMUIAlertAction *cancel = [QMUIAlertAction actionWithTitle:@"取消" style:QMUIAlertActionStyleDefault handler:^(__kindof QMUIAlertController * _Nonnull aAlertController, QMUIAlertAction * _Nonnull action) {
+//
+//    }];
     QMUIAlertAction *confirm = [QMUIAlertAction actionWithTitle:@"确定" style:QMUIAlertActionStyleDefault handler:^(__kindof QMUIAlertController * _Nonnull aAlertController, QMUIAlertAction * _Nonnull action) {
         
     }];
-    QMUIAlertController *alertController = [QMUIAlertController alertControllerWithTitle:@"" message:@"" preferredStyle:QMUIAlertControllerStyleAlert];
+    QMUIAlertController *alertController = [QMUIAlertController alertControllerWithTitle:@"评价咨询师" message:@"" preferredStyle:QMUIAlertControllerStyleAlert];
     [alertController addAction:confirm];
-    [alertController addAction:cancel];
+//    [alertController addAction:cancel];
     UIView *customView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 200, 30)];
 //    customView.backgroundColor = UIColor.redColor;
     __weak __typeof(self)weakSelf = self;
@@ -51,7 +51,6 @@
     [self.starView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.center.mas_equalTo(customView);
     }];
-//    self.starView.starScore = 3;
     [alertController addCustomView:customView];
     [alertController showWithAnimated:YES];
 }

@@ -6,7 +6,7 @@
 //
 
 #import "AppDelegate.h"
-#import <DoraemonKit/DoraemonManager.h>
+//#import <DoraemonKit/DoraemonManager.h>
 #import "YYFPSLabel.h"
 #import <RTMPCHybirdEngine/ARRtmpSDK.h>
 
@@ -47,12 +47,16 @@
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleThemeDidChangeNotification:) name:QMUIThemeDidChangeNotification object:nil];
     
-    [[DoraemonManager shareInstance] installWithPid:@"ac608fbbbd20789a82e174feafd29e5d"];
+//    [[DoraemonManager shareInstance] installWithPid:@"ac608fbbbd20789a82e174feafd29e5d"];
     
-    self.window = [[UIWindow alloc] init];
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     [self didInitWindow];
     
-    [self.window addSubview:[[YYFPSLabel alloc] initWithFrame:CGRectMake(20, 20, 0, 0)]];
+    CGFloat y = 20;
+    if (IS_NOTCHED_SCREEN) {
+        y = 44;
+    }
+    [self.window addSubview:[[YYFPSLabel alloc] initWithFrame:CGRectMake(20, y, 0, 0)]];
     
     
     return YES;

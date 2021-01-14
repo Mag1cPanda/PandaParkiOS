@@ -158,6 +158,12 @@
 		096BD6C125AF077400E0DEE7 /* YYStarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 096BD6BE25AF077400E0DEE7 /* YYStarView.m */; };
 		096BD6C225AF077400E0DEE7 /* YYStarView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 096BD6BF25AF077400E0DEE7 /* YYStarView.bundle */; };
 		096BD6C625AF079500E0DEE7 /* StarDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 096BD6C525AF079500E0DEE7 /* StarDemoViewController.m */; };
+		096BD6D025AFEAB700E0DEE7 /* SRDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 096BD6CF25AFEAB700E0DEE7 /* SRDeviceInfo.m */; };
+		096BD6D425AFEDF300E0DEE7 /* SRUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 096BD6D325AFEDF300E0DEE7 /* SRUtils.m */; };
+		096BD6D825AFF4C500E0DEE7 /* AlertDialogDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 096BD6D725AFF4C500E0DEE7 /* AlertDialogDemoVC.m */; };
+		096BD6DC25B01C1500E0DEE7 /* SRBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 096BD6DB25B01C1500E0DEE7 /* SRBaseViewController.m */; };
+		096BD72B25B043DD00E0DEE7 /* AttentionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 096BD72A25B043DD00E0DEE7 /* AttentionViewController.m */; };
+		096BD72F25B043F100E0DEE7 /* DiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 096BD72E25B043F100E0DEE7 /* DiscoverViewController.m */; };
 		3EA0F7FE451F03708F7877DA /* libPods-PandaParkiOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 489C30039CE50327E4ECA591 /* libPods-PandaParkiOS.a */; };
 /* End PBXBuildFile section */
 
@@ -453,6 +459,18 @@
 		096BD6C025AF077400E0DEE7 /* YYStarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYStarView.h; sourceTree = "<group>"; };
 		096BD6C425AF079500E0DEE7 /* StarDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StarDemoViewController.h; sourceTree = "<group>"; };
 		096BD6C525AF079500E0DEE7 /* StarDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StarDemoViewController.m; sourceTree = "<group>"; };
+		096BD6CE25AFEAB700E0DEE7 /* SRDeviceInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRDeviceInfo.h; sourceTree = "<group>"; };
+		096BD6CF25AFEAB700E0DEE7 /* SRDeviceInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRDeviceInfo.m; sourceTree = "<group>"; };
+		096BD6D225AFEDF300E0DEE7 /* SRUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRUtils.h; sourceTree = "<group>"; };
+		096BD6D325AFEDF300E0DEE7 /* SRUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRUtils.m; sourceTree = "<group>"; };
+		096BD6D625AFF4C500E0DEE7 /* AlertDialogDemoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlertDialogDemoVC.h; sourceTree = "<group>"; };
+		096BD6D725AFF4C500E0DEE7 /* AlertDialogDemoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlertDialogDemoVC.m; sourceTree = "<group>"; };
+		096BD6DA25B01C1500E0DEE7 /* SRBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRBaseViewController.h; sourceTree = "<group>"; };
+		096BD6DB25B01C1500E0DEE7 /* SRBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRBaseViewController.m; sourceTree = "<group>"; };
+		096BD72925B043DD00E0DEE7 /* AttentionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AttentionViewController.h; sourceTree = "<group>"; };
+		096BD72A25B043DD00E0DEE7 /* AttentionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AttentionViewController.m; sourceTree = "<group>"; };
+		096BD72D25B043F100E0DEE7 /* DiscoverViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiscoverViewController.h; sourceTree = "<group>"; };
+		096BD72E25B043F100E0DEE7 /* DiscoverViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiscoverViewController.m; sourceTree = "<group>"; };
 		489C30039CE50327E4ECA591 /* libPods-PandaParkiOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PandaParkiOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		638BDA9D111194F441A0498C /* Pods-PandaParkiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PandaParkiOS.debug.xcconfig"; path = "Target Support Files/Pods-PandaParkiOS/Pods-PandaParkiOS.debug.xcconfig"; sourceTree = "<group>"; };
 		7DEE0A7D0D2B4B5AABF3A206 /* Pods-PandaParkiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PandaParkiOS.release.xcconfig"; path = "Target Support Files/Pods-PandaParkiOS/Pods-PandaParkiOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -578,6 +596,8 @@
 				0949B47B25AC016E00444DF2 /* QDUIHelper.m */,
 				0949B47925AC016E00444DF2 /* UIImageEffects.h */,
 				0949B47C25AC016E00444DF2 /* UIImageEffects.m */,
+				096BD6D225AFEDF300E0DEE7 /* SRUtils.h */,
+				096BD6D325AFEDF300E0DEE7 /* SRUtils.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -868,6 +888,8 @@
 				096BD6B625AF01D900E0DEE7 /* RTMPDemoViewController.m */,
 				096BD6C425AF079500E0DEE7 /* StarDemoViewController.h */,
 				096BD6C525AF079500E0DEE7 /* StarDemoViewController.m */,
+				096BD6D625AFF4C500E0DEE7 /* AlertDialogDemoVC.h */,
+				096BD6D725AFF4C500E0DEE7 /* AlertDialogDemoVC.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -886,6 +908,10 @@
 			children = (
 				0949B61025AC36CB00444DF2 /* MatchViewController.h */,
 				0949B61125AC36CB00444DF2 /* MatchViewController.m */,
+				096BD72925B043DD00E0DEE7 /* AttentionViewController.h */,
+				096BD72A25B043DD00E0DEE7 /* AttentionViewController.m */,
+				096BD72D25B043F100E0DEE7 /* DiscoverViewController.h */,
+				096BD72E25B043F100E0DEE7 /* DiscoverViewController.m */,
 			);
 			path = Matching;
 			sourceTree = "<group>";
@@ -946,6 +972,8 @@
 				096BD6AA25AEF93600E0DEE7 /* LXYDouYinTabBarController.m */,
 				096BD6B125AEFA7E00E0DEE7 /* ViewController.h */,
 				096BD6B225AEFA7E00E0DEE7 /* ViewController.m */,
+				096BD6DA25B01C1500E0DEE7 /* SRBaseViewController.h */,
+				096BD6DB25B01C1500E0DEE7 /* SRBaseViewController.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -958,6 +986,8 @@
 				096BD66F25AEB23A00E0DEE7 /* YYFPSLabel.m */,
 				096BD66325AEB07D00E0DEE7 /* TDTouchID.h */,
 				096BD66225AEB07D00E0DEE7 /* TDTouchID.m */,
+				096BD6CE25AFEAB700E0DEE7 /* SRDeviceInfo.h */,
+				096BD6CF25AFEAB700E0DEE7 /* SRDeviceInfo.m */,
 			);
 			path = Vendor;
 			sourceTree = "<group>";
@@ -1192,8 +1222,10 @@
 				0949B5E025AC043800444DF2 /* QDSearchBarViewController.m in Sources */,
 				0949B58F25AC043800444DF2 /* QDCAShapeLoadingViewController.m in Sources */,
 				0949B5B925AC043800444DF2 /* QDBadgeViewController.m in Sources */,
+				096BD6D825AFF4C500E0DEE7 /* AlertDialogDemoVC.m in Sources */,
 				0949B49025AC016E00444DF2 /* QDHookViewController.m in Sources */,
 				0949B5C725AC043800444DF2 /* QDLabelViewController.m in Sources */,
+				096BD6DC25B01C1500E0DEE7 /* SRBaseViewController.m in Sources */,
 				0949B59D25AC043800444DF2 /* QDToastListViewController.m in Sources */,
 				0949B59E25AC043800444DF2 /* QDFloatLayoutViewController.m in Sources */,
 				0949B5A525AC043800444DF2 /* QDSingleImagePickerPreviewViewController.m in Sources */,
@@ -1208,6 +1240,7 @@
 				0949B59325AC043800444DF2 /* QDLabViewController.m in Sources */,
 				0949B59125AC043800444DF2 /* QDInteractiveDebugViewController.m in Sources */,
 				096BD6AF25AEF93700E0DEE7 /* LXYDouYinTabBar.m in Sources */,
+				096BD6D425AFEDF300E0DEE7 /* SRUtils.m in Sources */,
 				0949B5B025AC043800444DF2 /* QDSaveVideoToSpecifiedAlbumViewController.m in Sources */,
 				096BD6B725AF01D900E0DEE7 /* RTMPDemoViewController.m in Sources */,
 				096BD6C125AF077400E0DEE7 /* YYStarView.m in Sources */,
@@ -1232,10 +1265,13 @@
 				0949B49B25AC016E00444DF2 /* UIImageEffects.m in Sources */,
 				0949B5DA25AC043800444DF2 /* QDFontViewController.m in Sources */,
 				096BD65A25ADC03300E0DEE7 /* SRNavigationController.m in Sources */,
+				096BD72F25B043F100E0DEE7 /* DiscoverViewController.m in Sources */,
+				096BD72B25B043DD00E0DEE7 /* AttentionViewController.m in Sources */,
 				0949B5AB25AC043800444DF2 /* QDCustomToastContentView.m in Sources */,
 				0949B5AA25AC043800444DF2 /* QDImagePreviewViewController1.m in Sources */,
 				0949B5B425AC043800444DF2 /* QDCollectionDemoViewController.m in Sources */,
 				0949B5C325AC043800444DF2 /* QDSearchViewController.m in Sources */,
+				096BD6D025AFEAB700E0DEE7 /* SRDeviceInfo.m in Sources */,
 				0949B58925AC043800444DF2 /* UINavigationItem+QMUIBottomAccessoryView.m in Sources */,
 				0949B5B725AC043800444DF2 /* QDCellHeightCacheViewController.m in Sources */,
 				0949B5BB25AC043800444DF2 /* QDConsoleViewController.m in Sources */,
@@ -1414,6 +1450,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S58CK2GNVZ;
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PandaParkiOS/PrefixHeader.pch";
 				INFOPLIST_FILE = PandaParkiOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -1435,6 +1472,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S58CK2GNVZ;
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PandaParkiOS/PrefixHeader.pch";
 				INFOPLIST_FILE = PandaParkiOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;

@@ -9,6 +9,7 @@
 #import "SVGADemoVC.h"
 #import "RTMPDemoViewController.h"
 #import "StarDemoViewController.h"
+#import "AlertDialogDemoVC.h"
 
 @interface HomeViewController ()
 
@@ -29,38 +30,7 @@
 //    self.dataArr = tmpArr.mutableCopy;
     
     //导航栏平滑过渡
-    self.dataArr = @[@"矢量动画", @"推拉流", @"评分视图"].mutableCopy;
-}
-
-- (void)showCustomAlert
-{
-    // 底部按钮
-    QMUIAlertAction *action1 = [QMUIAlertAction actionWithTitle:@"确认交卷" style:QMUIAlertActionStyleDefault handler:NULL];
-    QMUIAlertAction *action2 = [QMUIAlertAction actionWithTitle:@"检查一下" style:QMUIAlertActionStyleDefault handler:NULL];
-    
-    // 弹窗
-    QMUIAlertController *alertController = [[QMUIAlertController alloc] initWithTitle:@"确定删除？" message:@"删除后将无法恢复，请慎重考虑" preferredStyle:QMUIAlertControllerStyleAlert];
-    NSMutableDictionary *titleAttributs = [[NSMutableDictionary alloc] initWithDictionary:alertController.alertTitleAttributes];
-    titleAttributs[NSForegroundColorAttributeName] = UIColor.blackColor;
-    alertController.alertTitleAttributes = titleAttributs;
-    NSMutableDictionary *messageAttributs = [[NSMutableDictionary alloc] initWithDictionary:alertController.alertMessageAttributes];
-    messageAttributs[NSForegroundColorAttributeName] = UIColor.blackColor;
-    alertController.alertMessageAttributes = messageAttributs;
-    alertController.alertHeaderBackgroundColor = UIColorFromRGB(0xf7f7f7);
-//    alertController.alertSeparatorColor = UIColorFromRGB(0x09141F);
-    alertController.alertTitleMessageSpacing = 7;
-    
-    NSMutableDictionary *buttonAttributes = [[NSMutableDictionary alloc] initWithDictionary:alertController.alertButtonAttributes];
-    buttonAttributes[NSForegroundColorAttributeName] = UIColorFromRGB(0xFFA200);
-    alertController.alertButtonAttributes = buttonAttributes;
-    
-    NSMutableDictionary *cancelButtonAttributes = [[NSMutableDictionary alloc] initWithDictionary:alertController.alertCancelButtonAttributes];
-    cancelButtonAttributes[NSForegroundColorAttributeName] = UIColorFromRGB(0xFFA200);
-    alertController.alertCancelButtonAttributes = cancelButtonAttributes;
-    
-    [alertController addAction:action1];
-    [alertController addAction:action2];
-    [alertController showWithAnimated:YES];
+    self.dataArr = @[@"矢量动画", @"推拉流", @"评分视图", @"自定义弹窗"].mutableCopy;
 }
 
 #pragma mark - <UITableViewDataSource, UITableViewDelegate>
@@ -127,6 +97,10 @@
         StarDemoViewController *vc = [StarDemoViewController new];
         [self.navigationController pushViewController:vc animated:YES];
     }
+    else if (indexPath.row == 3) {
+        AlertDialogDemoVC *vc = [AlertDialogDemoVC new];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
 }
 
 - (void)handleButtonEvent:(UIView *)view {
@@ -139,7 +113,7 @@
     }
 }
 
-#pragma mark - setter
+#pragma mark - getter
 -(NSMutableArray *)dataArr
 {
     if (!_dataArr) {

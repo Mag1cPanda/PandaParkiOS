@@ -14,23 +14,8 @@ PODS:
   - AFNetworking/Serialization (4.0.1)
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
-  - DoraemonKit/Core (3.0.6):
-    - FMDB
-    - GCDWebServer
-    - GCDWebServer/WebDAV
-    - GCDWebServer/WebUploader
   - FCUUID (1.3.1):
     - UICKeyChainStore (~> 2.1.0)
-  - FMDB (2.7.5):
-    - FMDB/standard (= 2.7.5)
-  - FMDB/standard (2.7.5)
-  - GCDWebServer (3.5.4):
-    - GCDWebServer/Core (= 3.5.4)
-  - GCDWebServer/Core (3.5.4)
-  - GCDWebServer/WebDAV (3.5.4):
-    - GCDWebServer/Core
-  - GCDWebServer/WebUploader (3.5.4):
-    - GCDWebServer/Core
   - lottie-ios (2.5.3)
   - Masonry (1.1.0)
   - MJRefresh (3.5.0)
@@ -376,13 +361,13 @@ PODS:
   - TZImagePickerController (3.5.8)
   - UICKeyChainStore (2.1.2)
   - WebViewJavascriptBridge (6.0.3)
+  - WMPageController (2.5.2)
   - YYCategories (1.0.4):
     - YYCategories/no-arc (= 1.0.4)
   - YYCategories/no-arc (1.0.4)
 
 DEPENDENCIES:
   - AFNetworking (~> 4.0.1)
-  - DoraemonKit/Core (~> 3.0.6)
   - FCUUID
   - lottie-ios (~> 2.5.3)
   - Masonry (~> 1.1.0)
@@ -396,15 +381,13 @@ DEPENDENCIES:
   - SVGAPlayer (~> 2.5.6)
   - TZImagePickerController (~> 3.5.8)
   - WebViewJavascriptBridge (~> 6.0.3)
+  - WMPageController (~> 2.5.2)
   - YYCategories (~> 1.0.4)
 
 SPEC REPOS:
   trunk:
     - AFNetworking
-    - DoraemonKit
     - FCUUID
-    - FMDB
-    - GCDWebServer
     - lottie-ios
     - Masonry
     - MJRefresh
@@ -420,14 +403,12 @@ SPEC REPOS:
     - TZImagePickerController
     - UICKeyChainStore
     - WebViewJavascriptBridge
+    - WMPageController
     - YYCategories
 
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
-  DoraemonKit: 919709427c30af94e265532a879ac41797d296d1
   FCUUID: bb054fc90cd7cd99320f9f6ff8e130fe607fba05
-  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
-  GCDWebServer: 2c156a56c8226e2d5c0c3f208a3621ccffbe3ce4
   lottie-ios: a50d5c0160425cd4b01b852bb9578963e6d92d31
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
@@ -443,8 +424,9 @@ SPEC CHECKSUMS:
   TZImagePickerController: 7fd9702897ef8c0b7c951e5463f4bcf398296f9e
   UICKeyChainStore: 85db518bb1d294366d15ec9b92a416c4e670518f
   WebViewJavascriptBridge: 7f5bc4d3581e672e8f32bd0f812d54bc69bb8e29
+  WMPageController: 0c7624d2b48e4f1ab92371688cf6744ed701575d
   YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
 
-PODFILE CHECKSUM: 269544c0b37bd0b68e2de07c43c90749ecc0b5cb
+PODFILE CHECKSUM: 0ec5b3ce11d04e021ec73cf2346e71600ae905e4
 
 COCOAPODS: 1.9.3

@@ -97,15 +97,12 @@ EOM
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/DoraemonKit/DoraemonKit.bundle"
-  install_resource "${PODS_ROOT}/GCDWebServer/GCDWebUploader/GCDWebUploader.bundle"
   install_resource "${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle"
   install_resource "${PODS_CONFIGURATION_BUILD_DIR}/QMUIKit/QMUIResources.bundle"
   install_resource "${PODS_ROOT}/SGQRCode/SGQRCode/SGQRCode.bundle"
   install_resource "${PODS_ROOT}/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZImagePickerController.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_resource "${PODS_ROOT}/GCDWebServer/GCDWebUploader/GCDWebUploader.bundle"
   install_resource "${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle"
   install_resource "${PODS_CONFIGURATION_BUILD_DIR}/QMUIKit/QMUIResources.bundle"
   install_resource "${PODS_ROOT}/SGQRCode/SGQRCode/SGQRCode.bundle"
