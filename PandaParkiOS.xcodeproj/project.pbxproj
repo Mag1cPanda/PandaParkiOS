@@ -164,6 +164,26 @@
 		096BD6DC25B01C1500E0DEE7 /* SRBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 096BD6DB25B01C1500E0DEE7 /* SRBaseViewController.m */; };
 		096BD72B25B043DD00E0DEE7 /* AttentionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 096BD72A25B043DD00E0DEE7 /* AttentionViewController.m */; };
 		096BD72F25B043F100E0DEE7 /* DiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 096BD72E25B043F100E0DEE7 /* DiscoverViewController.m */; };
+		096BD75625B13D3D00E0DEE7 /* JXPageListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 096BD75025B13D3D00E0DEE7 /* JXPageListView.m */; };
+		096BD75725B13D3D00E0DEE7 /* JXPageListMainTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 096BD75125B13D3D00E0DEE7 /* JXPageListMainTableView.m */; };
+		096BD75825B13D3D00E0DEE7 /* JXPageListContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 096BD75525B13D3D00E0DEE7 /* JXPageListContainerView.m */; };
+		096BD75D25B17AC500E0DEE7 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 096BD75C25B17AC500E0DEE7 /* InfoViewController.m */; };
+		096BD76125B17B0B00E0DEE7 /* ArticleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 096BD76025B17B0B00E0DEE7 /* ArticleViewController.m */; };
+		096BD76525B18F3400E0DEE7 /* SRPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 096BD76425B18F3400E0DEE7 /* SRPageController.m */; };
+		096BD79F25B19C7300E0DEE7 /* HeaderFooterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 096BD78525B19C6800E0DEE7 /* HeaderFooterViewController.m */; };
+		096BD7A025B19C7300E0DEE7 /* UpdateConstraintsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 096BD78625B19C6900E0DEE7 /* UpdateConstraintsController.m */; };
+		096BD7A325B19C7300E0DEE7 /* CompositeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 096BD78C25B19C6A00E0DEE7 /* CompositeController.m */; };
+		096BD7A425B19C7300E0DEE7 /* BasicAnimatedController.m in Sources */ = {isa = PBXBuildFile; fileRef = 096BD78E25B19C6B00E0DEE7 /* BasicAnimatedController.m */; };
+		096BD7A525B19C7300E0DEE7 /* TotalUpdateController.m in Sources */ = {isa = PBXBuildFile; fileRef = 096BD78F25B19C6C00E0DEE7 /* TotalUpdateController.m */; };
+		096BD7A825B19C7300E0DEE7 /* AspectFitController.m in Sources */ = {isa = PBXBuildFile; fileRef = 096BD79425B19C6E00E0DEE7 /* AspectFitController.m */; };
+		096BD7AA25B19C7300E0DEE7 /* ScrollViewComplexController.m in Sources */ = {isa = PBXBuildFile; fileRef = 096BD79625B19C6F00E0DEE7 /* ScrollViewComplexController.m */; };
+		096BD7AB25B19C7300E0DEE7 /* BasicController.m in Sources */ = {isa = PBXBuildFile; fileRef = 096BD79725B19C6F00E0DEE7 /* BasicController.m */; };
+		096BD7AC25B19C7300E0DEE7 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 096BD79925B19C7100E0DEE7 /* TableViewController.m */; };
+		096BD7AD25B19C7300E0DEE7 /* RemakeContraintsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 096BD79B25B19C7100E0DEE7 /* RemakeContraintsController.m */; };
+		096BD7AE25B19C7300E0DEE7 /* ScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 096BD79E25B19C7300E0DEE7 /* ScrollViewController.m */; };
+		096BD7C225B19D9100E0DEE7 /* TestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 096BD7BC25B19D9000E0DEE7 /* TestCell.m */; };
+		096BD7C325B19D9100E0DEE7 /* HYBBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 096BD7BD25B19D9000E0DEE7 /* HYBBaseController.m */; };
+		096BD7C425B19D9100E0DEE7 /* TestTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 096BD7C125B19D9100E0DEE7 /* TestTableView.m */; };
 		3EA0F7FE451F03708F7877DA /* libPods-PandaParkiOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 489C30039CE50327E4ECA591 /* libPods-PandaParkiOS.a */; };
 /* End PBXBuildFile section */
 
@@ -471,6 +491,46 @@
 		096BD72A25B043DD00E0DEE7 /* AttentionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AttentionViewController.m; sourceTree = "<group>"; };
 		096BD72D25B043F100E0DEE7 /* DiscoverViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiscoverViewController.h; sourceTree = "<group>"; };
 		096BD72E25B043F100E0DEE7 /* DiscoverViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiscoverViewController.m; sourceTree = "<group>"; };
+		096BD75025B13D3D00E0DEE7 /* JXPageListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXPageListView.m; sourceTree = "<group>"; };
+		096BD75125B13D3D00E0DEE7 /* JXPageListMainTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXPageListMainTableView.m; sourceTree = "<group>"; };
+		096BD75225B13D3D00E0DEE7 /* JXPageListContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXPageListContainerView.h; sourceTree = "<group>"; };
+		096BD75325B13D3D00E0DEE7 /* JXPageListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXPageListView.h; sourceTree = "<group>"; };
+		096BD75425B13D3D00E0DEE7 /* JXPageListMainTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXPageListMainTableView.h; sourceTree = "<group>"; };
+		096BD75525B13D3D00E0DEE7 /* JXPageListContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXPageListContainerView.m; sourceTree = "<group>"; };
+		096BD75B25B17AC500E0DEE7 /* InfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
+		096BD75C25B17AC500E0DEE7 /* InfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
+		096BD75F25B17B0B00E0DEE7 /* ArticleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArticleViewController.h; sourceTree = "<group>"; };
+		096BD76025B17B0B00E0DEE7 /* ArticleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArticleViewController.m; sourceTree = "<group>"; };
+		096BD76325B18F3400E0DEE7 /* SRPageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRPageController.h; sourceTree = "<group>"; };
+		096BD76425B18F3400E0DEE7 /* SRPageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRPageController.m; sourceTree = "<group>"; };
+		096BD78125B19C6600E0DEE7 /* BasicController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicController.h; sourceTree = "<group>"; };
+		096BD78225B19C6700E0DEE7 /* UpdateConstraintsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdateConstraintsController.h; sourceTree = "<group>"; };
+		096BD78325B19C6700E0DEE7 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		096BD78425B19C6800E0DEE7 /* HeaderFooterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderFooterViewController.h; sourceTree = "<group>"; };
+		096BD78525B19C6800E0DEE7 /* HeaderFooterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderFooterViewController.m; sourceTree = "<group>"; };
+		096BD78625B19C6900E0DEE7 /* UpdateConstraintsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpdateConstraintsController.m; sourceTree = "<group>"; };
+		096BD78725B19C6900E0DEE7 /* ScrollViewComplexController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollViewComplexController.h; sourceTree = "<group>"; };
+		096BD78825B19C6900E0DEE7 /* CompositeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompositeController.h; sourceTree = "<group>"; };
+		096BD78C25B19C6A00E0DEE7 /* CompositeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompositeController.m; sourceTree = "<group>"; };
+		096BD78E25B19C6B00E0DEE7 /* BasicAnimatedController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicAnimatedController.m; sourceTree = "<group>"; };
+		096BD78F25B19C6C00E0DEE7 /* TotalUpdateController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TotalUpdateController.m; sourceTree = "<group>"; };
+		096BD79025B19C6D00E0DEE7 /* ScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollViewController.h; sourceTree = "<group>"; };
+		096BD79325B19C6D00E0DEE7 /* AspectFitController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AspectFitController.h; sourceTree = "<group>"; };
+		096BD79425B19C6E00E0DEE7 /* AspectFitController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AspectFitController.m; sourceTree = "<group>"; };
+		096BD79625B19C6F00E0DEE7 /* ScrollViewComplexController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollViewComplexController.m; sourceTree = "<group>"; };
+		096BD79725B19C6F00E0DEE7 /* BasicController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicController.m; sourceTree = "<group>"; };
+		096BD79825B19C7000E0DEE7 /* BasicAnimatedController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicAnimatedController.h; sourceTree = "<group>"; };
+		096BD79925B19C7100E0DEE7 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		096BD79B25B19C7100E0DEE7 /* RemakeContraintsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemakeContraintsController.m; sourceTree = "<group>"; };
+		096BD79C25B19C7200E0DEE7 /* TotalUpdateController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TotalUpdateController.h; sourceTree = "<group>"; };
+		096BD79D25B19C7200E0DEE7 /* RemakeContraintsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemakeContraintsController.h; sourceTree = "<group>"; };
+		096BD79E25B19C7300E0DEE7 /* ScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollViewController.m; sourceTree = "<group>"; };
+		096BD7BC25B19D9000E0DEE7 /* TestCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCell.m; sourceTree = "<group>"; };
+		096BD7BD25B19D9000E0DEE7 /* HYBBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBBaseController.m; sourceTree = "<group>"; };
+		096BD7BE25B19D9100E0DEE7 /* HYBBaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBBaseController.h; sourceTree = "<group>"; };
+		096BD7BF25B19D9100E0DEE7 /* TestCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCell.h; sourceTree = "<group>"; };
+		096BD7C025B19D9100E0DEE7 /* TestTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTableView.h; sourceTree = "<group>"; };
+		096BD7C125B19D9100E0DEE7 /* TestTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTableView.m; sourceTree = "<group>"; };
 		489C30039CE50327E4ECA591 /* libPods-PandaParkiOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PandaParkiOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		638BDA9D111194F441A0498C /* Pods-PandaParkiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PandaParkiOS.debug.xcconfig"; path = "Target Support Files/Pods-PandaParkiOS/Pods-PandaParkiOS.debug.xcconfig"; sourceTree = "<group>"; };
 		7DEE0A7D0D2B4B5AABF3A206 /* Pods-PandaParkiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PandaParkiOS.release.xcconfig"; path = "Target Support Files/Pods-PandaParkiOS/Pods-PandaParkiOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -899,6 +959,8 @@
 			children = (
 				0949B5FF25AC33D100444DF2 /* DynamicViewController.h */,
 				0949B60025AC33D100444DF2 /* DynamicViewController.m */,
+				096BD75F25B17B0B00E0DEE7 /* ArticleViewController.h */,
+				096BD76025B17B0B00E0DEE7 /* ArticleViewController.m */,
 			);
 			path = Dynamic;
 			sourceTree = "<group>";
@@ -908,6 +970,8 @@
 			children = (
 				0949B61025AC36CB00444DF2 /* MatchViewController.h */,
 				0949B61125AC36CB00444DF2 /* MatchViewController.m */,
+				096BD76325B18F3400E0DEE7 /* SRPageController.h */,
+				096BD76425B18F3400E0DEE7 /* SRPageController.m */,
 				096BD72925B043DD00E0DEE7 /* AttentionViewController.h */,
 				096BD72A25B043DD00E0DEE7 /* AttentionViewController.m */,
 				096BD72D25B043F100E0DEE7 /* DiscoverViewController.h */,
@@ -919,6 +983,7 @@
 		0949B5F825AC339600444DF2 /* Chat */ = {
 			isa = PBXGroup;
 			children = (
+				096BD77625B19C1700E0DEE7 /* Layout */,
 				0949B60725AC33EF00444DF2 /* ChatViewController.h */,
 				0949B60825AC33EF00444DF2 /* ChatViewController.m */,
 			);
@@ -928,8 +993,11 @@
 		0949B5F925AC339E00444DF2 /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				096BD74F25B13D3D00E0DEE7 /* PageListView */,
 				0949B60B25AC33F600444DF2 /* MineViewController.h */,
 				0949B60C25AC33F600444DF2 /* MineViewController.m */,
+				096BD75B25B17AC500E0DEE7 /* InfoViewController.h */,
+				096BD75C25B17AC500E0DEE7 /* InfoViewController.m */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -1013,6 +1081,54 @@
 				096BD6C025AF077400E0DEE7 /* YYStarView.h */,
 			);
 			path = YYStarView;
+			sourceTree = "<group>";
+		};
+		096BD74F25B13D3D00E0DEE7 /* PageListView */ = {
+			isa = PBXGroup;
+			children = (
+				096BD75225B13D3D00E0DEE7 /* JXPageListContainerView.h */,
+				096BD75525B13D3D00E0DEE7 /* JXPageListContainerView.m */,
+				096BD75425B13D3D00E0DEE7 /* JXPageListMainTableView.h */,
+				096BD75125B13D3D00E0DEE7 /* JXPageListMainTableView.m */,
+				096BD75325B13D3D00E0DEE7 /* JXPageListView.h */,
+				096BD75025B13D3D00E0DEE7 /* JXPageListView.m */,
+			);
+			path = PageListView;
+			sourceTree = "<group>";
+		};
+		096BD77625B19C1700E0DEE7 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				096BD7BE25B19D9100E0DEE7 /* HYBBaseController.h */,
+				096BD7BD25B19D9000E0DEE7 /* HYBBaseController.m */,
+				096BD7BF25B19D9100E0DEE7 /* TestCell.h */,
+				096BD7BC25B19D9000E0DEE7 /* TestCell.m */,
+				096BD7C025B19D9100E0DEE7 /* TestTableView.h */,
+				096BD7C125B19D9100E0DEE7 /* TestTableView.m */,
+				096BD79325B19C6D00E0DEE7 /* AspectFitController.h */,
+				096BD79425B19C6E00E0DEE7 /* AspectFitController.m */,
+				096BD79825B19C7000E0DEE7 /* BasicAnimatedController.h */,
+				096BD78E25B19C6B00E0DEE7 /* BasicAnimatedController.m */,
+				096BD78125B19C6600E0DEE7 /* BasicController.h */,
+				096BD79725B19C6F00E0DEE7 /* BasicController.m */,
+				096BD78825B19C6900E0DEE7 /* CompositeController.h */,
+				096BD78C25B19C6A00E0DEE7 /* CompositeController.m */,
+				096BD78425B19C6800E0DEE7 /* HeaderFooterViewController.h */,
+				096BD78525B19C6800E0DEE7 /* HeaderFooterViewController.m */,
+				096BD79D25B19C7200E0DEE7 /* RemakeContraintsController.h */,
+				096BD79B25B19C7100E0DEE7 /* RemakeContraintsController.m */,
+				096BD78725B19C6900E0DEE7 /* ScrollViewComplexController.h */,
+				096BD79625B19C6F00E0DEE7 /* ScrollViewComplexController.m */,
+				096BD79025B19C6D00E0DEE7 /* ScrollViewController.h */,
+				096BD79E25B19C7300E0DEE7 /* ScrollViewController.m */,
+				096BD78325B19C6700E0DEE7 /* TableViewController.h */,
+				096BD79925B19C7100E0DEE7 /* TableViewController.m */,
+				096BD79C25B19C7200E0DEE7 /* TotalUpdateController.h */,
+				096BD78F25B19C6C00E0DEE7 /* TotalUpdateController.m */,
+				096BD78225B19C6700E0DEE7 /* UpdateConstraintsController.h */,
+				096BD78625B19C6900E0DEE7 /* UpdateConstraintsController.m */,
+			);
+			path = Layout;
 			sourceTree = "<group>";
 		};
 		5077CB1EAA9A6562C0C060A6 /* Pods */ = {
@@ -1176,10 +1292,12 @@
 				0949B5BF25AC043800444DF2 /* QDTableViewCellAccessoryTypeViewController.m in Sources */,
 				0949B49925AC016E00444DF2 /* QMUIConfigurationTemplate.m in Sources */,
 				0949B5BE25AC043800444DF2 /* QDInsetGroupedTableViewController.m in Sources */,
+				096BD76525B18F3400E0DEE7 /* SRPageController.m in Sources */,
 				0949B5CA25AC043800444DF2 /* QDTableViewCellInsetsViewController.m in Sources */,
 				0949B5B525AC043800444DF2 /* QDModalPresentationViewController.m in Sources */,
 				0949B5C125AC043800444DF2 /* QDTabBarItemViewController.m in Sources */,
 				0949B59825AC043800444DF2 /* QDThemeViewController.m in Sources */,
+				096BD7A325B19C7300E0DEE7 /* CompositeController.m in Sources */,
 				0949B59925AC043800444DF2 /* QDEmotionsViewController.m in Sources */,
 				096BD67825AED24300E0DEE7 /* SVGADemoVC.m in Sources */,
 				096BD6A425AEEE8300E0DEE7 /* SRDouYinTabBarController.m in Sources */,
@@ -1191,7 +1309,9 @@
 				0949B49C25AC016E00444DF2 /* QDCommonUI.m in Sources */,
 				0949B5C625AC043800444DF2 /* QDLinkButtonViewController.m in Sources */,
 				0949B5DE25AC043800444DF2 /* QDInterceptBackButtonEventViewController.m in Sources */,
+				096BD7C225B19D9100E0DEE7 /* TestCell.m in Sources */,
 				0949B5DB25AC043800444DF2 /* QDFoldCollectionViewLayout.m in Sources */,
+				096BD7C425B19D9100E0DEE7 /* TestTableView.m in Sources */,
 				0949B61225AC36CB00444DF2 /* MatchViewController.m in Sources */,
 				0949B59F25AC043800444DF2 /* QDMoreOperationViewController.m in Sources */,
 				0949B41625ABE6E900444DF2 /* AppDelegate.m in Sources */,
@@ -1200,6 +1320,7 @@
 				0949B59B25AC043800444DF2 /* QDMultipleImagePickerPreviewViewController.m in Sources */,
 				0949B5AC25AC043800444DF2 /* QDPieProgressViewController.m in Sources */,
 				0949B49F25AC016E00444DF2 /* QDCommonGridViewController.m in Sources */,
+				096BD7AA25B19C7300E0DEE7 /* ScrollViewComplexController.m in Sources */,
 				0949B5CB25AC043800444DF2 /* QDObjectMethodsListViewController.m in Sources */,
 				0949B5C425AC043800444DF2 /* QDNavigationListViewController.m in Sources */,
 				0949B58725AC043800444DF2 /* QMUIInteractiveDebugPanelItem.m in Sources */,
@@ -1211,6 +1332,7 @@
 				0949B5A125AC043800444DF2 /* QDKeyboardViewController.m in Sources */,
 				0949B58C25AC043800444DF2 /* QDActivityIndicator.m in Sources */,
 				0949B5B825AC043800444DF2 /* QDDynamicHeightTableViewCell.m in Sources */,
+				096BD79F25B19C7300E0DEE7 /* HeaderFooterViewController.m in Sources */,
 				0949B5D925AC043800444DF2 /* QDUIViewDebugViewController.m in Sources */,
 				0949B5D025AC043800444DF2 /* QDNormalButtonViewController.m in Sources */,
 				0949B5A225AC043800444DF2 /* QDImagePickerExampleViewController.m in Sources */,
@@ -1219,6 +1341,7 @@
 				0949B59025AC043800444DF2 /* QDReplicatorLayerViewController.m in Sources */,
 				0949B5D125AC043800444DF2 /* QDAlertController.m in Sources */,
 				0949B5B625AC043800444DF2 /* QDStaticTableViewController.m in Sources */,
+				096BD75625B13D3D00E0DEE7 /* JXPageListView.m in Sources */,
 				0949B5E025AC043800444DF2 /* QDSearchBarViewController.m in Sources */,
 				0949B58F25AC043800444DF2 /* QDCAShapeLoadingViewController.m in Sources */,
 				0949B5B925AC043800444DF2 /* QDBadgeViewController.m in Sources */,
@@ -1237,8 +1360,10 @@
 				096BD65F25ADC05400E0DEE7 /* SRTabBarViewController.m in Sources */,
 				0949B59625AC043800444DF2 /* QDPopupContainerViewController.m in Sources */,
 				0949B5E625AC043800444DF2 /* QDAboutViewController.m in Sources */,
+				096BD75D25B17AC500E0DEE7 /* InfoViewController.m in Sources */,
 				0949B59325AC043800444DF2 /* QDLabViewController.m in Sources */,
 				0949B59125AC043800444DF2 /* QDInteractiveDebugViewController.m in Sources */,
+				096BD7AB25B19C7300E0DEE7 /* BasicController.m in Sources */,
 				096BD6AF25AEF93700E0DEE7 /* LXYDouYinTabBar.m in Sources */,
 				096BD6D425AFEDF300E0DEE7 /* SRUtils.m in Sources */,
 				0949B5B025AC043800444DF2 /* QDSaveVideoToSpecifiedAlbumViewController.m in Sources */,
@@ -1248,6 +1373,7 @@
 				0949B5A325AC043800444DF2 /* QDGridViewController.m in Sources */,
 				0949B59425AC043800444DF2 /* QDFontPointSizeAndLineHeightViewController.m in Sources */,
 				0949B5BD25AC043800444DF2 /* QDImageViewViewController.m in Sources */,
+				096BD7AC25B19C7300E0DEE7 /* TableViewController.m in Sources */,
 				096BD6A825AEEEBC00E0DEE7 /* SRDouYinTabBar.m in Sources */,
 				0949B58B25AC043800444DF2 /* QDNavigationBottomAccessoryViewController.m in Sources */,
 				0949B4A225AC016E00444DF2 /* QDCommonListViewController.m in Sources */,
@@ -1265,8 +1391,10 @@
 				0949B49B25AC016E00444DF2 /* UIImageEffects.m in Sources */,
 				0949B5DA25AC043800444DF2 /* QDFontViewController.m in Sources */,
 				096BD65A25ADC03300E0DEE7 /* SRNavigationController.m in Sources */,
+				096BD76125B17B0B00E0DEE7 /* ArticleViewController.m in Sources */,
 				096BD72F25B043F100E0DEE7 /* DiscoverViewController.m in Sources */,
 				096BD72B25B043DD00E0DEE7 /* AttentionViewController.m in Sources */,
+				096BD7A525B19C7300E0DEE7 /* TotalUpdateController.m in Sources */,
 				0949B5AB25AC043800444DF2 /* QDCustomToastContentView.m in Sources */,
 				0949B5AA25AC043800444DF2 /* QDImagePreviewViewController1.m in Sources */,
 				0949B5B425AC043800444DF2 /* QDCollectionDemoViewController.m in Sources */,
@@ -1275,8 +1403,10 @@
 				0949B58925AC043800444DF2 /* UINavigationItem+QMUIBottomAccessoryView.m in Sources */,
 				0949B5B725AC043800444DF2 /* QDCellHeightCacheViewController.m in Sources */,
 				0949B5BB25AC043800444DF2 /* QDConsoleViewController.m in Sources */,
+				096BD7C325B19D9100E0DEE7 /* HYBBaseController.m in Sources */,
 				0949B5A425AC043800444DF2 /* QDDialogViewController.m in Sources */,
 				0949B5DD25AC043800444DF2 /* QDNavigationButtonViewController.m in Sources */,
+				096BD7AE25B19C7300E0DEE7 /* ScrollViewController.m in Sources */,
 				0949B5C825AC043800444DF2 /* QDTableViewHeaderFooterViewController.m in Sources */,
 				0949B5DC25AC043800444DF2 /* QDCAAnimationViewController.m in Sources */,
 				0949B5B125AC043800444DF2 /* QDImagePreviewViewController2.m in Sources */,
@@ -1288,10 +1418,12 @@
 				0949B58E25AC043800444DF2 /* QDAllAnimationViewController.m in Sources */,
 				0949B60925AC33EF00444DF2 /* ChatViewController.m in Sources */,
 				0949B49A25AC016E00444DF2 /* QDUIHelper.m in Sources */,
+				096BD7A025B19C7300E0DEE7 /* UpdateConstraintsController.m in Sources */,
 				0949B5A825AC043800444DF2 /* QDCustomToastAnimator.m in Sources */,
 				096BD6C625AF079500E0DEE7 /* StarDemoViewController.m in Sources */,
 				0949B49E25AC016E00444DF2 /* QDCommonViewController.m in Sources */,
 				0949B59C25AC043800444DF2 /* QDCollectionViewDemoCell.m in Sources */,
+				096BD7AD25B19C7300E0DEE7 /* RemakeContraintsController.m in Sources */,
 				0949B49325AC016E00444DF2 /* NSObject+QMUIHook.m in Sources */,
 				0949B5E525AC043800444DF2 /* QDToolBarButtonViewController.m in Sources */,
 				0949B5E125AC043800444DF2 /* QDTableViewCellSeparatorInsetsViewController.m in Sources */,
@@ -1304,15 +1436,19 @@
 				0949B59725AC043800444DF2 /* QDEmptyViewController.m in Sources */,
 				0949B4A425AC016E00444DF2 /* QDCommonTableViewController.m in Sources */,
 				0949B5D525AC043800444DF2 /* QDOrientationViewController.m in Sources */,
+				096BD75825B13D3D00E0DEE7 /* JXPageListContainerView.m in Sources */,
 				0949B42725ABE6EA00444DF2 /* main.m in Sources */,
 				0949B5A625AC043800444DF2 /* QDSaveImageToSpecifiedAlbumViewController.m in Sources */,
 				0949B5AF25AC043800444DF2 /* QDThemeExampleView.m in Sources */,
 				0949B5D425AC043800444DF2 /* QDTextViewController.m in Sources */,
 				0949B5E325AC043800444DF2 /* QDUIKitViewController.m in Sources */,
 				0949B5AD25AC043800444DF2 /* QDMarqueeLabelViewController.m in Sources */,
+				096BD75725B13D3D00E0DEE7 /* JXPageListMainTableView.m in Sources */,
 				0949B49225AC016E00444DF2 /* Aspects.m in Sources */,
+				096BD7A825B19C7300E0DEE7 /* AspectFitController.m in Sources */,
 				0949B58A25AC043800444DF2 /* QDNavigationBarSmoothEffectViewController.m in Sources */,
 				096BD6AE25AEF93700E0DEE7 /* LXYDouYinTabBarController.m in Sources */,
+				096BD7A425B19C7300E0DEE7 /* BasicAnimatedController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -5,11 +5,11 @@
 //  Created by panshen  on 2021/1/11.
 //
 
-#import <WMPageController.h>
+#import "SRBaseViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MatchViewController : WMPageController
+@interface MatchViewController : SRBaseViewController
 
 @end
 

@@ -6,9 +6,23 @@
 //
 
 #import "ChatViewController.h"
+#import "BasicController.h"
+#import "UpdateConstraintsController.h"
+#import "RemakeContraintsController.h"
+#import "TotalUpdateController.h"
+#import "CompositeController.h"
+#import "AspectFitController.h"
+#import "BasicAnimatedController.h"
+#import "ScrollViewController.h"
+#import "ScrollViewComplexController.h"
+#import "TableViewController.h"
+#import "HeaderFooterViewController.h"
 
 @interface ChatViewController ()
+<UITableViewDelegate, UITableViewDataSource>
 
+@property (nonatomic, strong) NSArray *controllers;
+@property (nonatomic, strong) UITableView *tableView;
 @end
 
 @implementation ChatViewController
@@ -18,16 +32,56 @@
     // Do any additional setup after loading the view.
 //    self.title = @"聊天";
     self.view.backgroundColor = RandomColor;
+    
+    self.tableView = [[UITableView alloc] init];
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    [self.view addSubview:self.tableView];
+    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+      make.edges.mas_equalTo(self.view);
+    }];
+
+    self.controllers = @[
+                         [[BasicController alloc] initWithTitle:@"基础使用"],
+                         [[UpdateConstraintsController alloc] initWithTitle:@"动画更新约束"],
+                         [[RemakeContraintsController alloc] initWithTitle:@"动画重新添加约束"],
+                         [[TotalUpdateController alloc] initWithTitle:@"整体动画更新约束"],
+                         [[CompositeController alloc] initWithTitle:@"复合view循环约束"],
+                         [[AspectFitController alloc] initWithTitle:@"约束百分比"],
+                         [[BasicAnimatedController alloc] initWithTitle:@"基本动画"],
+                         [[ScrollViewController alloc] initWithTitle:@"ScrollView布局"],
+                         [[ScrollViewComplexController alloc] initWithTitle:@"复杂ScrollView"],
+                         [[TableViewController alloc] initWithTitle:@"tableview布局"],
+                         [[HeaderFooterViewController alloc] initWithTitle:@"header/footer layout"],
+                         ];
 }
 
-/*
-#pragma mark - Navigation
+#pragma mark - UITableViewDataSource
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+  static NSString *kCellIdentifier = @"CellIdentifier";
+  UIViewController *viewController = self.controllers[indexPath.row];
+  UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kCellIdentifier];
+  
+  if (!cell) {
+    cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kCellIdentifier];
+  }
+  
+  cell.textLabel.text = viewController.title;
+  
+  return cell;
 }
-*/
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+  return self.controllers.count;
+}
+
+#pragma mark - UITableViewDelegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+  UIViewController *viewController = self.controllers[indexPath.row];
+  [self.navigationController pushViewController:viewController animated:YES];
+}
+
 
 @end

@@ -6,6 +6,8 @@
 //
 
 #import "DynamicViewController.h"
+#import "QDNavigationBarMaxYViewController.h"
+#import "ArticleViewController.h"
 
 @interface DynamicViewController ()
 @property(nonatomic, strong) NSMutableArray *dataArr;
@@ -19,15 +21,13 @@
 //    self.title = @"动态";
     self.view.backgroundColor = RandomColor;
     
-    self.dataArr = @[@"矢量动画", @"推拉流", @"评分视图", @"自定义弹窗"].mutableCopy;
+    for (NSInteger i=0; i<100; i++) {
+        [self.dataArr addObject:@(i)];
+    }
 }
 
 
 #pragma mark - <UITableViewDataSource, UITableViewDelegate>
-
-//- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-//    return 10;
-//}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.dataArr.count;
@@ -40,8 +40,7 @@
         cell = [[QMUITableViewCell alloc] initForTableView:tableView withReuseIdentifier:identifier];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
-//    cell.textLabel.text = [NSString qmui_stringWithNSInteger:indexPath.row];
-    cell.textLabel.text = self.dataArr[indexPath.row];
+    cell.textLabel.text = [NSString qmui_stringWithNSInteger:indexPath.row];
     [cell updateCellAppearanceWithIndexPath:indexPath];
     return cell;
 }
@@ -74,22 +73,23 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSLog(@"section:%zi row:%zi",indexPath.section, indexPath.row);
-//    [self showCustomAlert];
+//    QDNavigationBarMaxYViewController *vc = [QDNavigationBarMaxYViewController new];
+    ArticleViewController *vc = [ArticleViewController new];
+//    vc.navigationBarHidden = YES;
+    vc.navigationBarHidden = (indexPath.row%2 == 0);
+    [self.navigationController pushViewController:vc animated:true];
+    
     if (indexPath.row == 0) {
-//        SVGADemoVC *vc = [SVGADemoVC new];
-//        [self.navigationController pushViewController:vc animated:YES];
+
     }
     else if (indexPath.row == 1) {
-//        RTMPDemoViewController *vc = [RTMPDemoViewController new];
-//        [self.navigationController pushViewController:vc animated:YES];
+
     }
     else if (indexPath.row == 2) {
-//        StarDemoViewController *vc = [StarDemoViewController new];
-//        [self.navigationController pushViewController:vc animated:YES];
+
     }
     else if (indexPath.row == 3) {
-//        AlertDialogDemoVC *vc = [AlertDialogDemoVC new];
-//        [self.navigationController pushViewController:vc animated:YES];
+
     }
 }
 

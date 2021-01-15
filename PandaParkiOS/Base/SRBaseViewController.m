@@ -18,5 +18,19 @@
     // Do any additional setup after loading the view.
 }
 
+-(BOOL)preferredNavigationBarHidden
+{
+    return self.navigationBarHidden;
+}
+
+- (BOOL)forceEnableInteractivePopGestureRecognizer
+{
+    return YES;
+}
+
+- (BOOL)shouldCustomizeNavigationBarTransitionIfHideable {
+    return YES;
+}
+
 
 @end
