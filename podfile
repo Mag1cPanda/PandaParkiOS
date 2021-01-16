@@ -16,7 +16,7 @@ target 'PandaParkiOS' do
   pod 'WMPageController', '~> 2.5.2'
   pod 'JXCategoryView', '~> 1.5.8'
   
-  pod 'KMNavigationBarTransition'
+#  pod 'KMNavigationBarTransition'
   
   #矢量动画
   pod 'SVGAPlayer', '~> 2.5.6'

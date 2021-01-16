@@ -5,11 +5,11 @@
 //  Created by panshen  on 2021/1/14.
 //
 
-#import "QMUICommonViewController.h"
+#import "SRBaseViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface AlertDialogDemoVC : QMUICommonViewController
+@interface AlertDialogDemoVC : SRBaseViewController
 
 @end
 

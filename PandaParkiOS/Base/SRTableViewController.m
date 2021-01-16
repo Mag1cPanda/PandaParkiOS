@@ -1,27 +1,27 @@
 //
-//  SRBaseViewController.m
+//  SRTableViewController.m
 //  PandaParkiOS
 //
-//  Created by panshen  on 2021/1/14.
+//  Created by panshen  on 2021/1/16.
 //
 
-#import "SRBaseViewController.h"
+#import "SRTableViewController.h"
 
-@interface SRBaseViewController ()
+@interface SRTableViewController ()
 
 @end
 
-@implementation SRBaseViewController
+@implementation SRTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
 
--(BOOL)preferredNavigationBarHidden
-{
-    return NO;
-}
+//-(BOOL)preferredNavigationBarHidden
+//{
+//    return self.navigationBarHidden;
+//}
 
 - (BOOL)forceEnableInteractivePopGestureRecognizer
 {
@@ -31,6 +31,5 @@
 - (BOOL)shouldCustomizeNavigationBarTransitionIfHideable {
     return YES;
 }
-
 
 @end

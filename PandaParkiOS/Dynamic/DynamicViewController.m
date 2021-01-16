@@ -76,7 +76,7 @@
 //    QDNavigationBarMaxYViewController *vc = [QDNavigationBarMaxYViewController new];
     ArticleViewController *vc = [ArticleViewController new];
 //    vc.navigationBarHidden = YES;
-    vc.navigationBarHidden = (indexPath.row%2 == 0);
+//    vc.navigationBarHidden = (indexPath.row%2 == 0);
     [self.navigationController pushViewController:vc animated:true];
     
     if (indexPath.row == 0) {

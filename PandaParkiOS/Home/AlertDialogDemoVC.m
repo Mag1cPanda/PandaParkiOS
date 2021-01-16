@@ -30,6 +30,16 @@
     }];
 }
 
+-(BOOL)shouldCustomizeNavigationBarTransitionIfHideable
+{
+    return true;
+}
+
+-(BOOL)preferredNavigationBarHidden
+{
+    return false;
+}
+
 
 
 @end
