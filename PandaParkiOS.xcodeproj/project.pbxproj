@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		092FC8DA25B589FB00F5FD0A /* CustomShareMenuVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 092FC8D925B589FB00F5FD0A /* CustomShareMenuVC.m */; };
+		092FC8DE25B58C7400F5FD0A /* ShareMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 092FC8DD25B58C7400F5FD0A /* ShareMenuView.m */; };
 		0949B41625ABE6E900444DF2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B41525ABE6E900444DF2 /* AppDelegate.m */; };
 		0949B42125ABE6EA00444DF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0949B42025ABE6EA00444DF2 /* Assets.xcassets */; };
 		0949B42425ABE6EA00444DF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0949B42225ABE6EA00444DF2 /* LaunchScreen.storyboard */; };
@@ -191,6 +193,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		092FC8D825B589FB00F5FD0A /* CustomShareMenuVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomShareMenuVC.h; sourceTree = "<group>"; };
+		092FC8D925B589FB00F5FD0A /* CustomShareMenuVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomShareMenuVC.m; sourceTree = "<group>"; };
+		092FC8DC25B58C7400F5FD0A /* ShareMenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShareMenuView.h; sourceTree = "<group>"; };
+		092FC8DD25B58C7400F5FD0A /* ShareMenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareMenuView.m; sourceTree = "<group>"; };
 		0949B41125ABE6E900444DF2 /* PandaParkiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PandaParkiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0949B41425ABE6E900444DF2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0949B41525ABE6E900444DF2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -958,6 +964,10 @@
 				096BD6C525AF079500E0DEE7 /* StarDemoViewController.m */,
 				096BD6D625AFF4C500E0DEE7 /* AlertDialogDemoVC.h */,
 				096BD6D725AFF4C500E0DEE7 /* AlertDialogDemoVC.m */,
+				092FC8D825B589FB00F5FD0A /* CustomShareMenuVC.h */,
+				092FC8D925B589FB00F5FD0A /* CustomShareMenuVC.m */,
+				092FC8DC25B58C7400F5FD0A /* ShareMenuView.h */,
+				092FC8DD25B58C7400F5FD0A /* ShareMenuView.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -1324,6 +1334,7 @@
 				0949B49C25AC016E00444DF2 /* QDCommonUI.m in Sources */,
 				0949B5C625AC043800444DF2 /* QDLinkButtonViewController.m in Sources */,
 				0949B5DE25AC043800444DF2 /* QDInterceptBackButtonEventViewController.m in Sources */,
+				092FC8DA25B589FB00F5FD0A /* CustomShareMenuVC.m in Sources */,
 				096BD7C225B19D9100E0DEE7 /* TestCell.m in Sources */,
 				0949B5DB25AC043800444DF2 /* QDFoldCollectionViewLayout.m in Sources */,
 				096BD7C425B19D9100E0DEE7 /* TestTableView.m in Sources */,
@@ -1460,6 +1471,7 @@
 				0949B5E325AC043800444DF2 /* QDUIKitViewController.m in Sources */,
 				0949B5AD25AC043800444DF2 /* QDMarqueeLabelViewController.m in Sources */,
 				096BD75725B13D3D00E0DEE7 /* JXPageListMainTableView.m in Sources */,
+				092FC8DE25B58C7400F5FD0A /* ShareMenuView.m in Sources */,
 				0949B49225AC016E00444DF2 /* Aspects.m in Sources */,
 				096BD7A825B19C7300E0DEE7 /* AspectFitController.m in Sources */,
 				0949B58A25AC043800444DF2 /* QDNavigationBarSmoothEffectViewController.m in Sources */,

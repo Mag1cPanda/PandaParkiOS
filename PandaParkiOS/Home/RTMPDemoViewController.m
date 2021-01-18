@@ -35,7 +35,10 @@
     //实例化主播对象
     self.hosterKit = [[ARRtmpHosterKit alloc] initWithDelegate:self option:option];
     [self.hosterKit setLocalVideoCapturer:preview];
-    NSString *urlStr = @"rtmp://ev.yxybb.com/append/42100419920521421X110000019000202101000231610361045219";
+//    NSString *urlStr = @"rtmp://ev.yxybb.com/append/42100419920521421X110000019000202101000301610959719888";
+//    NSString *urlStr = @"rtmp://ev.yxybb.com/append/42100419920521421X110000019000202101000231610361045219";
+    NSString *urlStr = @"rtmp://ev.yxybb.com/append/42100419920521421X110000019000202101000311610960922197";
+
     [self.hosterKit startPushRtmpStream:urlStr];
 }
 
