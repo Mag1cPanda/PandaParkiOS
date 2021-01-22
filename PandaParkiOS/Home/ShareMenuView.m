@@ -87,18 +87,6 @@
     [self addSubview:self.cancelBtn];
 }
 
-
-//- (void)setStyle:(ShareMenuViewStyle)style
-//{
-//    if (self.style == ShareMenuViewStyleLight) {
-//
-//        [self.cancelBtn setTitleColor:UIColorFromRGB(0x333333) forState:0];
-//    } else {
-//        self.titleLbl.textColor = UIColor.whiteColor;
-//        [self.cancelBtn setTitleColor:UIColor.whiteColor forState:0];
-//    }
-//}
-
 -(void)cancelBtnClick
 {
     self.didClickCancel();

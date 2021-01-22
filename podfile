@@ -34,5 +34,8 @@ target 'PandaParkiOS' do
   
   #推拉流
   pod 'RTMPCHybirdEngine', '~> 3.0.2'
+  
+  pod 'libksygpulive/KSYGPUResource'
+  pod 'libksygpulive/libksygpulive'
 
 end

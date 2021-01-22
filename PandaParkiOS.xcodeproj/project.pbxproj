@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		092FC8DA25B589FB00F5FD0A /* CustomShareMenuVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 092FC8D925B589FB00F5FD0A /* CustomShareMenuVC.m */; };
 		092FC8DE25B58C7400F5FD0A /* ShareMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 092FC8DD25B58C7400F5FD0A /* ShareMenuView.m */; };
+		094639E625BACA86009EA43E /* CountDownDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 094639E525BACA86009EA43E /* CountDownDemoVC.m */; };
+		094639EB25BACBB4009EA43E /* MZTimerLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 094639EA25BACBB4009EA43E /* MZTimerLabel.m */; };
 		0949B41625ABE6E900444DF2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0949B41525ABE6E900444DF2 /* AppDelegate.m */; };
 		0949B42125ABE6EA00444DF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0949B42025ABE6EA00444DF2 /* Assets.xcassets */; };
 		0949B42425ABE6EA00444DF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0949B42225ABE6EA00444DF2 /* LaunchScreen.storyboard */; };
@@ -197,6 +199,10 @@
 		092FC8D925B589FB00F5FD0A /* CustomShareMenuVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomShareMenuVC.m; sourceTree = "<group>"; };
 		092FC8DC25B58C7400F5FD0A /* ShareMenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShareMenuView.h; sourceTree = "<group>"; };
 		092FC8DD25B58C7400F5FD0A /* ShareMenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareMenuView.m; sourceTree = "<group>"; };
+		094639E425BACA86009EA43E /* CountDownDemoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CountDownDemoVC.h; sourceTree = "<group>"; };
+		094639E525BACA86009EA43E /* CountDownDemoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CountDownDemoVC.m; sourceTree = "<group>"; };
+		094639E925BACBB4009EA43E /* MZTimerLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZTimerLabel.h; sourceTree = "<group>"; };
+		094639EA25BACBB4009EA43E /* MZTimerLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZTimerLabel.m; sourceTree = "<group>"; };
 		0949B41125ABE6E900444DF2 /* PandaParkiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PandaParkiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0949B41425ABE6E900444DF2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0949B41525ABE6E900444DF2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -562,6 +568,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		094639E825BACB7A009EA43E /* 倒计时 */ = {
+			isa = PBXGroup;
+			children = (
+				094639E925BACBB4009EA43E /* MZTimerLabel.h */,
+				094639EA25BACBB4009EA43E /* MZTimerLabel.m */,
+			);
+			path = "倒计时";
+			sourceTree = "<group>";
+		};
 		0949B40825ABE6E900444DF2 = {
 			isa = PBXGroup;
 			children = (
@@ -954,6 +969,7 @@
 		0949B5F525AC336600444DF2 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				094639E825BACB7A009EA43E /* 倒计时 */,
 				0949B5FA25AC33C400444DF2 /* HomeViewController.h */,
 				0949B5FB25AC33C400444DF2 /* HomeViewController.m */,
 				096BD67625AED24300E0DEE7 /* SVGADemoVC.h */,
@@ -968,6 +984,8 @@
 				092FC8D925B589FB00F5FD0A /* CustomShareMenuVC.m */,
 				092FC8DC25B58C7400F5FD0A /* ShareMenuView.h */,
 				092FC8DD25B58C7400F5FD0A /* ShareMenuView.m */,
+				094639E425BACA86009EA43E /* CountDownDemoVC.h */,
+				094639E525BACA86009EA43E /* CountDownDemoVC.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -1401,6 +1419,7 @@
 				0949B5BD25AC043800444DF2 /* QDImageViewViewController.m in Sources */,
 				096BD7AC25B19C7300E0DEE7 /* TableViewController.m in Sources */,
 				096BD6A825AEEEBC00E0DEE7 /* SRDouYinTabBar.m in Sources */,
+				094639E625BACA86009EA43E /* CountDownDemoVC.m in Sources */,
 				0949B58B25AC043800444DF2 /* QDNavigationBottomAccessoryViewController.m in Sources */,
 				0949B4A225AC016E00444DF2 /* QDCommonListViewController.m in Sources */,
 				0949B58825AC043800444DF2 /* QMUIInteractiveDebugPanelViewController.m in Sources */,
@@ -1446,6 +1465,7 @@
 				0949B60925AC33EF00444DF2 /* ChatViewController.m in Sources */,
 				0949B49A25AC016E00444DF2 /* QDUIHelper.m in Sources */,
 				096BD7A025B19C7300E0DEE7 /* UpdateConstraintsController.m in Sources */,
+				094639EB25BACBB4009EA43E /* MZTimerLabel.m in Sources */,
 				0949B5A825AC043800444DF2 /* QDCustomToastAnimator.m in Sources */,
 				096BD6C625AF079500E0DEE7 /* StarDemoViewController.m in Sources */,
 				0949B49E25AC016E00444DF2 /* QDCommonViewController.m in Sources */,

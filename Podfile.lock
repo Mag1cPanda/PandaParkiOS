@@ -16,7 +16,23 @@ PODS:
     - AFNetworking/NSURLSession
   - FCUUID (1.3.1):
     - UICKeyChainStore (~> 2.1.0)
+  - GPUImage (0.1.7)
   - JXCategoryView (1.5.8)
+  - libksygpulive/base (3.0.4)
+  - libksygpulive/KSYGPUResource (3.0.4)
+  - libksygpulive/libksygpulive (3.0.4):
+    - GPUImage
+    - libksygpulive/streamerbase
+  - libksygpulive/mediacodec (3.0.4)
+  - libksygpulive/mediacore_enc_base (3.0.4)
+  - libksygpulive/mediacore_enc_lite (3.0.4)
+  - libksygpulive/streamerbase (3.0.4):
+    - libksygpulive/base
+    - libksygpulive/mediacodec
+    - libksygpulive/mediacore_enc_base
+    - libksygpulive/mediacore_enc_lite
+    - libksygpulive/yuv
+  - libksygpulive/yuv (3.0.4)
   - lottie-ios (2.5.3)
   - Masonry (1.1.0)
   - MJRefresh (3.5.0)
@@ -372,6 +388,8 @@ DEPENDENCIES:
   - AFNetworking (~> 4.0.1)
   - FCUUID
   - JXCategoryView (~> 1.5.8)
+  - libksygpulive/KSYGPUResource
+  - libksygpulive/libksygpulive
   - lottie-ios (~> 2.5.3)
   - Masonry (~> 1.1.0)
   - MJRefresh (~> 3.5.0)
@@ -392,7 +410,9 @@ SPEC REPOS:
   trunk:
     - AFNetworking
     - FCUUID
+    - GPUImage
     - JXCategoryView
+    - libksygpulive
     - lottie-ios
     - Masonry
     - MJRefresh
@@ -415,7 +435,9 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
   FCUUID: bb054fc90cd7cd99320f9f6ff8e130fe607fba05
+  GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
   JXCategoryView: 778a620f76070d6598fd8d7239991b8da8326170
+  libksygpulive: aca3eb30e7a38ee6565feb52feb82ccc0103ce43
   lottie-ios: a50d5c0160425cd4b01b852bb9578963e6d92d31
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
@@ -435,6 +457,6 @@ SPEC CHECKSUMS:
   YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
   zhPopupController: 600aee950c86442c5cca0b078d94c71fe0e1c51e
 
-PODFILE CHECKSUM: fd66677bcd588519e6861329e59200cdfd43f3a5
+PODFILE CHECKSUM: 47dfed203ccab298c676059298084edaf46bd42d
 
 COCOAPODS: 1.9.3

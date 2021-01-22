@@ -12,6 +12,7 @@
 #import "AlertDialogDemoVC.h"
 #import <SDCycleScrollView.h>
 #import "CustomShareMenuVC.h"
+#import "CountDownDemoVC.h"
 
 @interface HomeViewController ()
 <SDCycleScrollViewDelegate,
@@ -36,7 +37,7 @@ UITableViewDataSource>
     //    self.dataArr = tmpArr.mutableCopy;
     
     
-    self.dataArr = @[@"矢量动画", @"推拉流", @"评分视图", @"自定义弹窗", @"自定义面板"].mutableCopy;
+    self.dataArr = @[@"矢量动画", @"推拉流", @"评分视图", @"自定义弹窗", @"自定义面板", @"倒计时"].mutableCopy;
     
     NSArray *imagesURLStrings = @[
         @"https://ss2.baidu.com/-vo3dSag_xI4khGko9WTAnF6hhy/super/whfpf%3D425%2C260%2C50/sign=a4b3d7085dee3d6d2293d48b252b5910/0e2442a7d933c89524cd5cd4d51373f0830200ea.jpg",
@@ -116,7 +117,6 @@ UITableViewDataSource>
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
-    //    QMUITableViewHeaderFooterView *headerView = (QMUITableViewHeaderFooterView *)[super tableView:tableView viewForHeaderInSection:section];
     QMUITableViewHeaderFooterView *headerView = [QMUITableViewHeaderFooterView new];
     QMUIButton *button = (QMUIButton *)headerView.accessoryView;
     if (!button) {
@@ -147,11 +147,13 @@ UITableViewDataSource>
         {
             SVGADemoVC *vc = [SVGADemoVC new];
             [self.navigationController pushViewController:vc animated:YES];
+            break;
         }
         case 1:
         {
             RTMPDemoViewController *vc = [RTMPDemoViewController new];
             [self.navigationController pushViewController:vc animated:YES];
+            break;
         }
             break;
         case 2:
@@ -169,6 +171,12 @@ UITableViewDataSource>
         case 4:
         {
             CustomShareMenuVC *vc = [CustomShareMenuVC new];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+        case 5:
+        {
+            CountDownDemoVC *vc = [CountDownDemoVC new];
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;
